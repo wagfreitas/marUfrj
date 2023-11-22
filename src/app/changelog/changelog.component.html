@@ -1,0 +1,31 @@
+<div class="app-content content">
+  <div class="content-wrapper">
+    <div class="content-header row mb-1">
+      <app-breadcrumb class="col-12" [breadcrumb]="breadcrumb"></app-breadcrumb>
+    </div>
+    <div class="content-body">
+      <section id="drag-area">
+        <div class="row">
+          <div class="col-md-12" *blockUI="'changelog'; message: 'Loading'">
+            <m-card [options]="options" (reloadFunction)="reloadChangelog($event)">
+              <ng-container mCardHeaderTitle>
+                Release Inicial 
+              </ng-container>
+              <ng-container mCardBody>
+                <h5 class="my-2">15-11-2023 [V1.0]</h5>
+                <div class="card-text">
+                  <ul>
+                    <li>Projeto Iniciado </li>
+                    <li>criada tela de Login</li>
+                    <li>Cirada pagina incial.</li> 
+                  </ul>
+                </div>
+              
+              </ng-container>
+            </m-card>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

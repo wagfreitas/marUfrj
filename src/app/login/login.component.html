@@ -1,0 +1,109 @@
+﻿<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row mb-0"></div>
+        <div class="content-body">
+            <section class="flexbox-container">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 col-md-8 col-10 box-shadow-2 p-0">
+                        <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
+                            <div class="card-header border-0">
+                                <div class="card-title text-center">
+                                    <img alt="branding logo"
+                                         src="assets/images/logo/logoativ.png" />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2 my-1">
+                                    <span>Dados de Acesso</span>
+                                </p>
+                                <div class="card-body">
+                                    <form (ngSubmit)="tryLogin()"
+                                          [formGroup]="loginForm"
+                                          class="form-horizontal">
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input [ngClass]="{
+                          'is-invalid': submitted && f.email.errors
+                        }"
+                                                   class="form-control"
+                                                   formControlName="email"
+                                                   id="user-name"
+                                                   placeholder="Email do Usuário"
+                                                   required
+                                                   type="text" />
+                                            <div class="form-control-position">
+                                                <i class="feather ft-user"></i>
+                                            </div>
+                                            <div *ngIf="submitted && f.email.errors"
+                                                 class="invalid-feedback">
+                                                <div *ngIf="f.email.errors.required">
+                                                    Usuário é Requerido
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input [ngClass]="{
+                          'is-invalid': submitted && f.password.errors
+                        }"
+                                                   class="form-control"
+                                                   formControlName="password"
+                                                   placeholder="Digite sua Senha"
+                                                   type="password" />
+                                            <div class="form-control-position">
+                                                <i class="la la-key"></i>
+                                            </div>
+                                            <div *ngIf="submitted && f.password.errors"
+                                                 class="invalid-feedback">
+                                                <div *ngIf="f.password.errors.required">
+                                                    Senha é Requerida
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group row">
+                                            <div class="col-md-6 col-12 text-center text-sm-left">
+                                                <div class="custom-control custom-checkbox mb-1">
+                                                    <input class="custom-control-input"
+                                                           id="remember-me"
+                                                           name="remember-me"
+                                                           type="checkbox" />
+                                                    <label class="custom-control-label"
+                                                           for="remember-me">
+                                                        Lembre meu login
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12 float-sm-left text-center text-sm-right">
+                                                <a class="card-link"
+                                                   href="recover-password.html">
+                                                    Esqueceu a Senha?
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-outline-info btn-block"
+                                                type="submit">
+                                            <i *ngIf="submitted"
+                                               class="fa fa-refresh fa-spin">
+                                            </i>
+                                            <i *ngIf="!submitted"
+                                               class="feather ft-unlock">
+                                            </i>
+                                            Login
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2 my-1">
+                                    <span>Novo por Aqui?</span>
+                                </p>
+                                <div class="card-body">
+                                    <a [routerLink]="['/register']"
+                                       class="btn btn-outline-danger btn-block">
+                                        <i class="feather ft-user"></i> Cadastrar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

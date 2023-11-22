@@ -1,0 +1,99 @@
+﻿<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row mb-1"></div>
+        <div class="content-body">
+            <section class="flexbox-container">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-md-4 col-10 box-shadow-2 p-0">
+                        <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
+                            <div class="card-content">
+                                <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2 my-1">
+                                    <span>Informe Seus Dados</span>
+                                </p>
+                                <div class="card-body">
+                                    <form (ngSubmit)="tryRegister()"
+                                          [formGroup]="registerForm"
+                                          class="form-horizontal">
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+                                                   class="form-control"
+                                                   formControlName="firstName"
+                                                   placeholder="Nome de Usuário"
+                                                   type="text" />
+                                            <div class="form-control-position">
+                                                <i class="feather ft-user"></i>
+                                            </div>
+                                            <div *ngIf="submitted && f.firstName.errors"
+                                                 class="invalid-feedback">
+                                                <div *ngIf="f.firstName.errors.required">
+                                                    Nome de usuário é requerido
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                                                   class="form-control"
+                                                   email
+                                                   formControlName="email"
+                                                   placeholder="Seu email de acesso"
+                                                   required
+                                                   type="email" />
+                                            <div class="form-control-position">
+                                                <i class="feather ft-mail"></i>
+                                            </div>
+                                            <div *ngIf="submitted && f.email.errors"
+                                                 class="invalid-feedback">
+                                                <div *ngIf="f.email.errors.required">
+                                                    Email é Requerido
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+                                                   class="form-control"
+                                                   formControlName="password"
+                                                   id="user-password"
+                                                   placeholder="Digite uma senha"
+                                                   required
+                                                   type="password" />
+                                            <div class="form-control-position">
+                                                <i class="la la-key"></i>
+                                            </div>
+                                            <div *ngIf="submitted && f.password.errors"
+                                                 class="invalid-feedback">
+                                                <div *ngIf="f.password.errors.required">
+                                                    Password is required
+                                                </div>
+                                                <div *ngIf="f.password.errors.minlength">
+                                                    Password must be at least 6 characters
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group row">
+                                           
+                                        </div>
+                                        <button class="btn btn-outline-info btn-block"
+                                                type="submit">
+                                            <i *ngIf="submitted"
+                                               class="fa fa-refresh fa-spin">
+                                            </i>
+                                            <i *ngIf="!submitted"
+                                               class="feather ft-user">
+                                            </i> Confirma
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="card-body">
+                                    <a [routerLink]="['/login']"
+                                       class="btn btn-outline-danger btn-block">
+                                        <i class="feather ft-unlock"></i> Login
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

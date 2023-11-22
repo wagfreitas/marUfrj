@@ -1,0 +1,64 @@
+<nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-shadow"
+  [ngClass]="selectedHeaderNavBarClass">
+  <div class="navbar-wrapper">
+    <div id="navbar-header" class="navbar-header" [ngClass]="selectedNavBarHeaderClass"
+      (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)">
+      <ul class="nav navbar-nav flex-row">
+        <!-- Remove position relative in responsive -->
+        <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs11"
+            (click)="toggleNavigation($event)">
+            <i class="feather ft-menu font-large-1"></i></a></li>
+        <li class="nav-item mr-auto"><a [routerLink]="['/dashboard/sales']" class="navbar-brand"
+            routerLink="/dashboard/sales"><img class="brand-logo" alt="modern admin logo"
+              [src]="_themeSettingsConfig.brand.logo.value">
+            <h3 class="brand-text">{{_themeSettingsConfig.brand.brand_name}}</h3>
+          </a></li>
+        <li class="nav-item d-none d-md-block nav-toggle">
+          <a [routerLink]="" class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"
+            (click)="toggleFixMenu($event)">
+            <i class="feather toggle-icon font-medium-3 white"
+              [ngClass]="{'ft-toggle-left': _themeSettingsConfig.menu === 'collapse','ft-toggle-right': _themeSettingsConfig.menu === 'expand'}"></i>
+          </a>
+        </li>
+        <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+            data-target="#navbar-mobile" (click)="toggleNavbar($event)"><i class="la la-ellipsis-v"></i></a></li>
+      </ul>
+    </div>
+    <!-- New-->
+    <div class="navbar-container content" [hidden]="isMobile && !showNavbar">
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav mr-auto float-left">
+          <li class="nav-item d-none d-md-block"><a [routerLink]="" class="nav-link nav-link-expand"
+              (click)="toggleFullScreen()" *ngIf="maximize === 'on'"><i class="ficon feather ft-maximize"></i></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav float-right">
+
+          <li class="dropdown-user nav-item" ngbDropdown>
+            <a class="nav-link dropdown-user-link" ngbDropdownToggle>
+              <span *ngIf="currentUser.displayName"
+                class="mr-1 user-name text-bold-700">{{currentUser.displayName}}</span>
+              <span *ngIf="!currentUser.displayName" class="mr-1 user-name text-bold-700">Antonio Dias</span>
+              <span class="avatar avatar-online">
+                <img *ngIf="currentUser.photoURL" src="{{currentUser.photoURL}}" alt="avatar">
+                <img *ngIf="!currentUser.photoURL" src="../../../assets/images/portrait/small/avatar-s-19.png"
+                  alt="avatar">
+                <i></i>
+              </span>
+            </a>
+            <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownProfileMenu">
+              <a class="dropdown-item" [routerLink]="['/user/user-profile']"><i class="feather ft-user"></i> Edit
+                Profile </a>
+              <a class="dropdown-item" [routerLink]="['/email']"><i class="feather ft-mail"></i> My Inbox </a>
+              <a class="dropdown-item" [routerLink]="['/todos']"><i class="feather ft-check-square"></i> Task </a>
+              <a class="dropdown-item" [routerLink]="['/chats']"><i class="feather ft-message-square"></i> Chats </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" [routerLink]="" (click)="logout()"><i class="feather ft-power"></i> Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- New-->
+  </div>
+</nav>
