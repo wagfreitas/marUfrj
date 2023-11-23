@@ -25,6 +25,7 @@ import { SettingsModule } from './_layout/settings/settings.module';
 import { ThemeSettingsConfig } from './_layout/settings/theme-settings.config';
 import { MenuSettingsConfig } from './_layout/settings/menu-settings.config';
 
+
 import { HeaderComponent } from './_layout/header/header.component';
 import { VerticalComponent as HeaderVerticalComponent } from './_layout/header/vertical/vertical.component';
 import { HorizontalComponent as HeaderHorizontalComponent } from './_layout/header/horizontal/horizontal.component';
@@ -50,6 +51,7 @@ import { HorizontalnavComponent } from './_layout/navigation/horizontalnav/horiz
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 // spinner
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FormElementsModule } from './content/admin/form-elements.module';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { DeviceDetectorService } from './_services/device-detector.service';
 import { RouterModule } from '@angular/router';
@@ -67,6 +69,7 @@ import { CalenderModule } from './content/calender/calender.module';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -78,6 +81,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         BreadcrumbModule,
         NgbModule,
         FormsModule,
+        FormElementsModule, 
         CalenderModule,
         CalendarModule.forRoot({
           provide: DateAdapter,
@@ -118,7 +122,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         BlockTemplateComponent,
         FullLayoutComponent,
     
-        AlunosAtividadesComponent
+        AlunosAtividadesComponent,
       ],
     providers: [
         AuthGuard,

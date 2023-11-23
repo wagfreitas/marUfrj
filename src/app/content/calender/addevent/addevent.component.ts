@@ -67,9 +67,11 @@ export class AddeventComponent implements OnInit {
     {
       start: subDays(startOfDay(new Date()), 0),
       end: addDays(new Date(), 1),
-      title: 'Business Lunch',
+      title: 'Aula de Matemática',
       color: colors.red,
       actions: this.actions,
+      professor: 'Jose da Silva', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       allDay: true,
       resizable: {
         beforeStart: true,
@@ -81,7 +83,9 @@ export class AddeventComponent implements OnInit {
     {
       start: subDays(endOfMonth(new Date()), 2),
       end: addDays(endOfMonth(new Date()), 1),
-      title: 'A long event that spans 2 months',
+      title: 'Curso de Corte e Costura',
+      professor: 'Maria da Graça', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       color: colors.blue,
       allDay: true
     },
@@ -89,9 +93,11 @@ export class AddeventComponent implements OnInit {
     {
       start: subDays(startOfMonth(new Date()), 1),
       end: addDays(startOfMonth(new Date()), 0),
-      title: 'Meeting',
+      title: 'Curso de Eletrica',
       color: colors.yellow,
       actions: this.actions,
+      professor: 'Manoel Antonio', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       resizable: {
         beforeStart: true,
         afterEnd: true
@@ -198,10 +204,12 @@ export class AddeventComponent implements OnInit {
    */
   addEvent(): void {
     this.newEvent = {
-      title: 'New event',
+      title: 'Curso de Alguma coisa ',
       start: startOfDay(new Date()),
       end: endOfDay(new Date()),
       color: colors.red,
+      professor: 'Jose da Silva', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       draggable: true,
       resizable: {
         beforeStart: true,

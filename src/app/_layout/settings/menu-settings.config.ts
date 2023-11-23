@@ -41,19 +41,13 @@ export const MenuSettingsConfig: MenuConfig = {
         page: 'null',
         submenu: {
           items: [
+           
             {
-              title: 'Basic',
-              page: '/calender/basic'
-            },
-            {
-              title: 'Events',
+              title: 'Eventos',
               page: '/calender/events'
             },
 
-            {
-              title: 'Add Event',
-              page: '/calender/addevent'
-            },
+            
           ]
         }
       },
@@ -71,7 +65,19 @@ export const MenuSettingsConfig: MenuConfig = {
       {
         title: 'Cadastros',
         icon: 'la-plus-circle',
-        page: '/',
+        page: 'null',
+        submenu: {
+          items: [
+           
+            {
+              title: 'Eventos',
+              page: '/admin/cadEventos',
+              icon: 'la-institution',
+            },
+
+            
+          ]
+        }
       }
     ]
   }

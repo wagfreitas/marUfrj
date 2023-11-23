@@ -10,7 +10,7 @@ import {
   endOfMonth,
   isSameDay,
   isSameMonth,
-  addHours
+  addHours,compareAsc, format 
 } from 'date-fns';
 import {
   CalendarEventTimesChangedEvent,
@@ -81,9 +81,11 @@ export class EventsComponent implements OnInit {
 
   events: CalendarEvent[] = [
     {
-      start: subDays(startOfDay(new Date()), 1),
-      end: addDays(new Date(), 1),
-      title: 'A 3 day event',
+      start: new Date(2023, 10, 21),
+      end: new Date(2023, 10, 21),
+      title: 'Aula de Matematica',
+      professor: 'Jose da Silva', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       color: colors.red,
       actions: this.actions,
       allDay: true,
@@ -94,22 +96,29 @@ export class EventsComponent implements OnInit {
       draggable: true
     },
     {
-      start: startOfDay(new Date()),
-      title: 'An event with no end date',
+      start: new Date(2023, 10, 21),
+      end: new Date(2023, 10, 22),
+      title: 'Aula de Biologia',
+      professor: 'Jose da Silva', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       color: colors.yellow,
       actions: this.actions
     },
     {
       start: subDays(endOfMonth(new Date()), 3),
       end: addDays(endOfMonth(new Date()), 3),
-      title: 'A long event that spans 2 months',
+      title: 'Curso de Corte e Costura',
+      professor: 'Maria de Lourdes Souza', 
+      descricao: 'Curso destinado a comunidade',
       color: colors.blue,
       allDay: true
     },
     {
       start: addHours(startOfDay(new Date()), 2),
       end: new Date(),
-      title: 'A draggable and resizable event',
+      title: 'Curso de Mecânica',
+      professor: 'Alfredo Antonio', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       color: colors.yellow,
       actions: this.actions,
       resizable: {
@@ -120,27 +129,21 @@ export class EventsComponent implements OnInit {
     }
   ];
 
+
+
+
   ngOnInit() {
     this.breadcrumb = {
-      mainlabel: 'Full Calendar Events',
+      mainlabel: 'Calendario de Eventos',
       links: [
         {
           name: 'Home',
           isLink: true,
           link: '/dashboard/sales'
         },
+        
         {
-          name: 'Apps',
-          isLink: true,
-          link: '#'
-        },
-        {
-          name: 'Calendars',
-          isLink: true,
-          link: '#'
-        },
-        {
-          name: 'Events',
+          name: 'Eventos',
           isLink: false,
           link: '#'
         }
@@ -181,10 +184,12 @@ export class EventsComponent implements OnInit {
 
   addEvent(): void {
     this.events.push({
-      title: 'New event',
+      title: 'Curso de Elétrica',
       start: startOfDay(new Date()),
       end: endOfDay(new Date()),
       color: colors.red,
+      professor: 'Francisca Carolina', 
+      descricao: 'Curso destinado a comunidade',
       draggable: true,
       resizable: {
         beforeStart: true,

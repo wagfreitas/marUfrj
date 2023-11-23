@@ -1,0 +1,106 @@
+<div class="app-content content">
+  <div class="content-wrapper">
+    <div class="content-header row mb-1">
+      <app-breadcrumb class="col-12" [breadcrumb]="breadcrumb"></app-breadcrumb>
+    </div>
+    <div class="content-body">
+      <!-- Form actions layout section start -->
+      <section id="form-action-layouts">
+        <div class="row" matchHeight="card">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title" id="from-actions-top-bottom-left">Cadastro de Eventos</h4>
+              </div>
+              <div class="card-content collpase show">
+                <div class="card-body">
+
+                  <form [formGroup]="issueTracking">
+
+                    <div class="form-body">
+                      <div class="form-group">
+                        <label for="issueinput1">Título</label>
+                        <input type="text" id="issueinput1" class="form-control" placeholder="issue title"
+                          ngbTooltip="Issue Title" placement="top" formControlName="issueTitle">
+                      </div>
+                      <div class="form-group">
+                        <label for="issueinput2">Professor</label>
+                        <input type="text" id="issueinput2" class="form-control" placeholder="opened by"
+                          ngbTooltip="Opened By" placement="top" formControlName="openedBy">
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="issueinput3">Data Inicio</label>
+                            <div class="input-group">
+                              <input class="form-control" placeholder="dd-mm-yyyy" name="dp" ngbDatepicker
+                                #d1="ngbDatepicker">
+                              <div class="input-group-append">
+                                <div class="input-group-text" (click)="d1.toggle()">
+                                  <i class="fa fa-calendar" style="cursor: pointer;"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="issueinput4">Data Fim</label>
+                            <div class="input-group">
+                              <input class="form-control" placeholder="dd-mm-yyyy" name="dp" ngbDatepicker
+                                #d2="ngbDatepicker">
+                              <div class="input-group-append">
+                                <div class="input-group-text" (click)="d2.toggle()">
+                                  <i class="fa fa-calendar" style="cursor: pointer;"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="issueinput5">Público</label>
+                            <select id="issueinput5" class="form-control" ngbTooltip="Priority" placement="top"
+                              formControlName="priority">
+                              <option *ngFor="let prio of priority" [value]="prio">{{prio}}</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="issueinput6">Número de Vagas</label>
+                            <select id="issueinput6" class="form-control" ngbTooltip="Status" placement="top"
+                              formControlName="status">
+                              <option *ngFor="let stat of status" [value]="stat">{{stat}}</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="issueinput8">Definições</label>
+                        <textarea id="issueinput8" rows="5" class="form-control" placeholder="comments"
+                          ngbTooltip="Comments" placement="top" formControlName="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-actions">
+                      <button type="button" class="btn btn-warning mr-1">
+                        <i class="feather ft-x"></i> Cancelar
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        <i class="la la-check"></i> Salvar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // Form actions layout section end -->
+    </div>
+  </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////-->
