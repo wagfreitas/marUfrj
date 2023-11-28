@@ -7,6 +7,7 @@ import { NgbModule, NgbCarouselConfig, NgbModalConfig } from '@ng-bootstrap/ng-b
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
 import { SettingsModule } from './_layout/settings/settings.module';
 import { ThemeSettingsConfig } from './_layout/settings/theme-settings.config';
 import { MenuSettingsConfig } from './_layout/settings/menu-settings.config';
+
 
 import { HeaderComponent } from './_layout/header/header.component';
 import { VerticalComponent as HeaderVerticalComponent } from './_layout/header/vertical/vertical.component';
@@ -50,6 +52,7 @@ import { HorizontalnavComponent } from './_layout/navigation/horizontalnav/horiz
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 // spinner
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FormElementsModule } from './content/admin/form-elements.module';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { DeviceDetectorService } from './_services/device-detector.service';
 import { RouterModule } from '@angular/router';
@@ -67,6 +70,7 @@ import { CalenderModule } from './content/calender/calender.module';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -78,6 +82,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         BreadcrumbModule,
         NgbModule,
         FormsModule,
+        FormElementsModule, 
         CalenderModule,
         CalendarModule.forRoot({
           provide: DateAdapter,
@@ -86,6 +91,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule, // imports firebase/firestore, only needed for database features
         AngularFireAuthModule, // imports firebase/auth, only needed for auth features
+        AngularFireDatabaseModule,
          routing,
         // Settings modules
         SettingsModule.forRoot(ThemeSettingsConfig, MenuSettingsConfig),
@@ -118,7 +124,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         BlockTemplateComponent,
         FullLayoutComponent,
     
-        AlunosAtividadesComponent
+        AlunosAtividadesComponent,
       ],
     providers: [
         AuthGuard,

@@ -6,6 +6,7 @@ import { startOfDay, endOfDay, subDays, addDays, endOfMonth, startOfMonth, isSam
 import { CalendarEventTimesChangedEvent, CalendarView, CalendarEvent, CalendarEventAction } from 'angular-calendar';
 import { NgbDateStruct, NgbTimeStruct } from '@ng-bootstrap/ng-bootstrap';
 import { BlockUI, NgBlockUI } from 'ng-block-ui';
+import { EventsService } from 'src/app/_services/events.service';
 
 const colors: any = {
   red: {
@@ -64,12 +65,14 @@ export class AddeventComponent implements OnInit {
   refresh: Subject<any> = new Subject();
 
   events: CalendarEvent[] = [
-    {
+   /* {
       start: subDays(startOfDay(new Date()), 0),
       end: addDays(new Date(), 1),
-      title: 'Business Lunch',
+      title: 'Aula de Matemática',
       color: colors.red,
       actions: this.actions,
+      professor: 'Jose da Silva', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       allDay: true,
       resizable: {
         beforeStart: true,
@@ -81,7 +84,9 @@ export class AddeventComponent implements OnInit {
     {
       start: subDays(endOfMonth(new Date()), 2),
       end: addDays(endOfMonth(new Date()), 1),
-      title: 'A long event that spans 2 months',
+      title: 'Curso de Corte e Costura',
+      professor: 'Maria da Graça', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       color: colors.blue,
       allDay: true
     },
@@ -89,15 +94,17 @@ export class AddeventComponent implements OnInit {
     {
       start: subDays(startOfMonth(new Date()), 1),
       end: addDays(startOfMonth(new Date()), 0),
-      title: 'Meeting',
+      title: 'Curso de Eletrica',
       color: colors.yellow,
       actions: this.actions,
+      professor: 'Manoel Antonio', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       resizable: {
         beforeStart: true,
         afterEnd: true
       },
       draggable: true
-    }
+    }*/
   ];
 
 
@@ -113,7 +120,9 @@ export class AddeventComponent implements OnInit {
    *
    * @param NgbModal      modal
    */
-  constructor(private modal: NgbModal) { }
+  constructor(
+    private modal: NgbModal,
+    private eventService: EventsService) { }
 
   /**
    * onInit
@@ -126,11 +135,6 @@ export class AddeventComponent implements OnInit {
           'name': 'Home',
           'isLink': true,
           'link': '/dashboard/sales'
-        },
-        {
-          'name': 'Apps',
-          'isLink': true,
-          'link': '#'
         },
         {
           'name': 'Calendars',
@@ -177,8 +181,8 @@ export class AddeventComponent implements OnInit {
     newStart,
     newEnd
   }: CalendarEventTimesChangedEvent): void {
-    event.start = newStart;
-    event.end = newEnd;
+  //  event.start = newStart;
+   // event.end = newEnd;
     this.handleEvent('Dropped or resized', event);
     this.refresh.next({});
   }
@@ -197,11 +201,13 @@ export class AddeventComponent implements OnInit {
    * Add new event in modal
    */
   addEvent(): void {
-    this.newEvent = {
-      title: 'New event',
+   /* this.newEvent = {
+      title: 'Curso de Alguma coisa ',
       start: startOfDay(new Date()),
       end: endOfDay(new Date()),
       color: colors.red,
+      professor: 'Jose da Silva', 
+      descricao: 'Aula de reforço para alunos em recuperação',
       draggable: true,
       resizable: {
         beforeStart: true,
@@ -213,7 +219,7 @@ export class AddeventComponent implements OnInit {
 
     // this.refresh.next();
     this.handleEvent('Add new event', this.newEvent);
-    this.refresh.next({});
+    this.refresh.next({});*/
   }
 
   /**

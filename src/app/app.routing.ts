@@ -6,6 +6,7 @@ import { RegisterComponent } from './register';
 import { LoginComponent } from './login';
 import { ChangelogComponent } from './changelog/changelog.component';
 import { AlunosAtividadesComponent } from './content/alunos-atividades/alunos-atividades.component';
+import { CadEventosComponent } from './content/admin/cad-eventos/cad-eventos.component';
 
 const appRoutes: Routes = [
   // Public layout
@@ -28,6 +29,14 @@ const appRoutes: Routes = [
       { path: 'alunosAtividades', component: AlunosAtividadesComponent, canActivate: [AuthGuard] },
       {
         path: 'calender', loadChildren: () => import('../app/content/calender/calender.module').then(m => m.CalenderModule),
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'admin', loadChildren: () => import('../app/content/admin/form-elements.module').then(m => m.FormElementsModule),
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'kanban', loadChildren: () => import('../app/content/kanban/kanban.module').then(m => m.KanbanModule),
         canActivate: [AuthGuard]
       },
     ],

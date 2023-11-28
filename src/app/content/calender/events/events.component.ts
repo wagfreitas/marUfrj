@@ -1,7 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ViewChild, TemplateRef } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, map } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import {
   startOfDay,
   endOfDay,
@@ -10,7 +12,7 @@ import {
   endOfMonth,
   isSameDay,
   isSameMonth,
-  addHours
+  addHours,compareAsc, format 
 } from 'date-fns';
 import {
   CalendarEventTimesChangedEvent,
@@ -19,6 +21,7 @@ import {
   CalendarEventAction
 } from 'angular-calendar';
 import { BlockUI, NgBlockUI } from 'ng-block-ui';
+import { EventsService } from 'src/app/_services/events.service';
 const colors: any = {
   red: {
     primary: '#ad2121',
@@ -50,6 +53,7 @@ export class EventsComponent implements OnInit {
   @BlockUI('events') blockUIEvents: NgBlockUI;
 
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
+  @ViewChild('modalIcons', { static: true }) modalIcons: TemplateRef<any>;
 
   view: CalendarView = CalendarView.Month;
 
@@ -79,75 +83,54 @@ export class EventsComponent implements OnInit {
   ];
   refresh: Subject<any> = new Subject();
 
-  events: CalendarEvent[] = [
-    {
-      start: subDays(startOfDay(new Date()), 1),
-      end: addDays(new Date(), 1),
-      title: 'A 3 day event',
-      color: colors.red,
-      actions: this.actions,
-      allDay: true,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true
-      },
-      draggable: true
-    },
-    {
-      start: startOfDay(new Date()),
-      title: 'An event with no end date',
-      color: colors.yellow,
-      actions: this.actions
-    },
-    {
-      start: subDays(endOfMonth(new Date()), 3),
-      end: addDays(endOfMonth(new Date()), 3),
-      title: 'A long event that spans 2 months',
-      color: colors.blue,
-      allDay: true
-    },
-    {
-      start: addHours(startOfDay(new Date()), 2),
-      end: new Date(),
-      title: 'A draggable and resizable event',
-      color: colors.yellow,
-      actions: this.actions,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true
-      },
-      draggable: true
-    }
-  ];
+ events: CalendarEvent[] = [];
+
 
   ngOnInit() {
     this.breadcrumb = {
-      mainlabel: 'Full Calendar Events',
+      mainlabel: 'Calendario de Eventos',
       links: [
         {
           name: 'Home',
           isLink: true,
           link: '/dashboard/sales'
         },
+        
         {
-          name: 'Apps',
-          isLink: true,
-          link: '#'
-        },
-        {
-          name: 'Calendars',
-          isLink: true,
-          link: '#'
-        },
-        {
-          name: 'Events',
+          name: 'Eventos',
           isLink: false,
           link: '#'
         }
       ]
     };
+
+    this.eventService.getAll().snapshotChanges()
+    .pipe(
+      map(changes => 
+        changes.map(c => (
+          {id: c.payload.doc.id, 
+           ...c.payload.doc.data()
+          }
+        )
+        
+      )
+        
+      )
+    ).subscribe(data => {
+      data.forEach(res => {
+       const dtini = res.start['seconds'];
+       const dtfim = res.end['seconds'];
+
+       res.end   = new Date(dtfim * 1000); 
+       res.start = new Date(dtini * 1000)
+       
+      })
+      this.events = data
+    })
   }
-  constructor(private modal: NgbModal) {}
+  constructor(
+    private modal: NgbModal,
+    private eventService: EventsService) {}
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {
@@ -163,13 +146,14 @@ export class EventsComponent implements OnInit {
     }
   }
 
-  eventTimesChanged({
+  eventTimesChanged(
+    {
     event,
     newStart,
     newEnd
   }: CalendarEventTimesChangedEvent): void {
-    event.start = newStart;
-    event.end = newEnd;
+      event.start = newStart;
+      event.end = newEnd;
     this.handleEvent('Dropped or resized', event);
     this.refresh.next({});
   }
@@ -179,23 +163,12 @@ export class EventsComponent implements OnInit {
     this.modal.open(this.modalContent, { size: 'lg' });
   }
 
-  addEvent(): void {
-    this.events.push({
-      title: 'New event',
-      start: startOfDay(new Date()),
-      end: endOfDay(new Date()),
-      color: colors.red,
-      draggable: true,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true
-      }
-    });
-    this.refresh.next({});
-  }
+  
   deleteEvent(eventToDelete: CalendarEvent) {
     this.events = this.events.filter(event => event !== eventToDelete);
   }
+
+
   setView(view: CalendarView) {
     this.view = view;
   }

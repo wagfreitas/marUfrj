@@ -28,32 +28,27 @@ export const MenuSettingsConfig: MenuConfig = {
         page: '/changelog',
         badge: { type: 'badge-danger', value: '1.0' }
       },
-
-      { section: 'Área do Aluno', icon: 'la-ellipsis-h' },
       {
-        title: 'Minhas Atividades',
+        title: 'Atividades Disponíveis',
         icon: 'la-user',
         page: '/alunosAtividades',
       },
+
+      { section: 'Área do Aluno', icon: 'la-ellipsis-h' },
+     
       {
         title: 'Calenders',
         icon: 'la-calendar',
         page: 'null',
         submenu: {
           items: [
+           
             {
-              title: 'Basic',
-              page: '/calender/basic'
-            },
-            {
-              title: 'Events',
+              title: 'Eventos',
               page: '/calender/events'
             },
 
-            {
-              title: 'Add Event',
-              page: '/calender/addevent'
-            },
+            
           ]
         }
       },
@@ -66,12 +61,36 @@ export const MenuSettingsConfig: MenuConfig = {
         page: '/',
       },
 
+      {
+        title: 'Kanban',
+        icon: 'la-book',
+        page: '/kanban',
+      },
+
       
       { section: 'Administrativo', icon: 'la-ellipsis-h' },
       {
         title: 'Cadastros',
         icon: 'la-plus-circle',
-        page: '/',
+        page: 'null',
+        submenu: {
+          items: [
+           
+            {
+              title: 'Eventos',
+              page: '/admin/cadEventos',
+              icon: 'la-institution',
+            },
+
+            {
+              title: 'Icones', 
+              page: '/admin/icons',
+              icon: 'la-pin'
+            }
+
+            
+          ]
+        }
       }
     ]
   }

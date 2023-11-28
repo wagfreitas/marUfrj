@@ -1,0 +1,5498 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@angular/animations": "^15.0.4",
+    "@angular/cdk": "^15.0.4",
+    "@angular/common": "^15.0.4",
+    "@angular/compiler": "^15.0.4",
+    "@angular/core": "^15.0.4",
+    "@angular/fire": "^7.5.0",
+    "@angular/forms": "^15.0.4",
+    "@angular/localize": "^15.0.4",
+    "@angular/platform-browser": "^15.0.4",
+    "@angular/platform-browser-dynamic": "^15.0.4",
+    "@angular/router": "^15.0.4",
+    "@cds/core": "^6.2.3",
+    "@ng-bootstrap/ng-bootstrap": "^14.0.0",
+    "@ng-select/ng-select": "^10.0.1",
+    "@ngx-loading-bar/core": "^6.0.2",
+    "@ngx-loading-bar/router": "^6.0.2",
+    "@ngx-translate/core": "^14.0.0",
+    "@popperjs/core": "^2.11.6",
+    "@trafficguard/device-detector-js": "^2.2.1-3.13.0",
+    "@webcomponents/webcomponentsjs": "^2.7.0",
+    "angular-archwizard": "^3.0.0",
+    "angular-calendar": "^0.31.0",
+    "angularx-flatpickr": "^7.3.0",
+    "autolinker": "^3.14.3",
+    "bootstrap": "^5.2.3",
+    "clone": "^2.1.2",
+    "core-js": "^3.27.1",
+    "date-fns": "^2.30.0",
+    "deep-equal": "^2.0.5",
+    "eventemitter3": "^5.0.0",
+    "file-saver": "^2.0.5",
+    "flatpickr": "^4.6.13",
+    "html2canvas": "^1.0.0-rc.7",
+    "icheck": "^1.0.2",
+    "lodash-es": "^4.17.21",
+    "moment": "^2.29.4",
+    "ngx-custom-validators": "^11.0.0",
+    "ngx-drag-and-drop-lists": "^1.3.3",
+    "ngx-perfect-scrollbar": "^10.1.1",
+    "ngx-quill": "^21.0.0",
+    "ngx-toastr": "^16.0.1",
+    "npm-force-resolutions": "0.0.10",
+    "pug": "^3.0.2",
+    "quill": "^1.3.7",
+    "quill-mention": "^3.1.0",
+    "rxjs": "^7.5.5",
+    "sass": "^1.57.1",
+    "save": "^2.9.0",
+    "tslib": "^2.4.1",
+    "util": "^0.12.5",
+    "xlsx": "^0.18.5",
+    "@angular-devkit/build-angular": "^15.0.4",
+    "@angular-devkit/build-webpack": "^0.1500.4",
+    "@angular-devkit/core": "^15.0.4",
+    "@angular-devkit/schematics": "^15.0.4",
+    "@angular-eslint/builder": "15.1.0",
+    "@angular-eslint/eslint-plugin": "15.1.0",
+    "@angular-eslint/eslint-plugin-template": "15.1.0",
+    "@angular-eslint/schematics": "15.1.0",
+    "@angular-eslint/template-parser": "15.1.0",
+    "@angular/cli": "^15.0.4",
+    "@angular/compiler-cli": "^15.0.4",
+    "@angular/language-service": "^15.0.4",
+    "@nx/angular": "17.1.3",
+    "@nx/workspace": "17.1.3",
+    "@schematics/angular": "^15.0.4",
+    "@types/jasmine": "^4.3.1",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^18.11.17",
+    "@types/quill": "^1.3.10",
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "@typescript-eslint/parser": "5.47.0",
+    "codelyzer": "^6.0.0",
+    "eslint": "^7.26.0",
+    "firebase": "^9.15.0",
+    "firebaseui": "^6.0.2",
+    "jasmine-core": "~4.5.0",
+    "jasmine-spec-reporter": "~7.0.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.0.0",
+    "ng-block-ui": "^3.0.2",
+    "ngx-clipboard": "^15.1.0",
+    "ngx-spinner": "^15.0.1",
+    "nx": "17.1.3",
+    "postcss": "^8.4.20",
+    "resize-observer-polyfill": "^1.5.1",
+    "saas": "^1.0.0",
+    "ts-node": "~10.9.1",
+    "typescript": "^4.8.4",
+    "zone.js": "~0.12.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "modern-admin": [
+        {
+          "file": ".DS_Store",
+          "hash": "6379735459482511487"
+        },
+        {
+          "file": ".firebaserc",
+          "hash": "15338435006473248423"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "16438061097488645787"
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix7/index.js",
+          "hash": "15966481786630545044",
+          "deps": [
+            "npm:os",
+            "npm:assert",
+            "npm:buffer",
+            "npm:zlib",
+            "npm:events",
+            "npm:fs",
+            "npm:path",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ],
+            [
+              "npm:events",
+              "dynamic"
+            ],
+            [
+              "npm:string_decoder",
+              "dynamic"
+            ],
+            [
+              "npm:constants",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix7/lib/daemon/process-run-end.js",
+          "hash": "4387998712489105129",
+          "deps": [
+            "npm:path",
+            "npm:os",
+            "npm:assert",
+            "npm:buffer",
+            "npm:zlib",
+            "npm:events",
+            "npm:fs",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ],
+            [
+              "npm:events",
+              "dynamic"
+            ],
+            [
+              "npm:string_decoder",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix7/lib/heartbeat/heartbeat-process.js",
+          "hash": "5633484099946442012",
+          "deps": [
+            "npm:os",
+            "npm:fs",
+            "npm:path",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix7/package.json",
+          "hash": "11687418979936424737"
+        },
+        {
+          "file": ".nx/cache/cloud/verify.lock",
+          "hash": "1074086595670601209"
+        },
+        {
+          "file": ".nx/cache/d/disabled",
+          "hash": "4664556114322093609"
+        },
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "2738845867212305996"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "6053047574516065887"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "5930808601679155843"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "17820486606803358880"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/17342844868495306799",
+          "hash": "15740215895607172933"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/7665960373139848647",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "15883812518955311972"
+        },
+        {
+          "file": "README.md",
+          "hash": "2195276887724933356"
+        },
+        {
+          "file": "firebase.json",
+          "hash": "2766845118071301348"
+        },
+        {
+          "file": "nx.json",
+          "hash": "16942876034376272774"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "11344241067087190814"
+        },
+        {
+          "file": "package.json",
+          "hash": "14305046091341049555",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/fire",
+            "npm:@angular/forms",
+            "npm:@angular/localize",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@cds/core",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@ng-select/ng-select",
+            "npm:@ngx-loading-bar/core",
+            "npm:@ngx-loading-bar/router",
+            "npm:@ngx-translate/core",
+            "npm:@popperjs/core",
+            "npm:@trafficguard/device-detector-js",
+            "npm:@webcomponents/webcomponentsjs",
+            "npm:angular-archwizard",
+            "npm:angular-calendar",
+            "npm:angularx-flatpickr",
+            "npm:autolinker",
+            "npm:bootstrap",
+            "npm:clone",
+            "npm:core-js",
+            "npm:date-fns",
+            "npm:deep-equal",
+            "npm:eventemitter3",
+            "npm:file-saver",
+            "npm:flatpickr",
+            "npm:html2canvas",
+            "npm:icheck",
+            "npm:lodash-es",
+            "npm:moment",
+            "npm:ngx-custom-validators",
+            "npm:ngx-drag-and-drop-lists",
+            "npm:ngx-perfect-scrollbar",
+            "npm:ngx-quill",
+            "npm:ngx-toastr",
+            "npm:npm-force-resolutions",
+            "npm:pug",
+            "npm:quill",
+            "npm:quill-mention",
+            "npm:rxjs",
+            "npm:sass",
+            "npm:save",
+            "npm:tslib",
+            "npm:util",
+            "npm:xlsx",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-devkit/build-webpack",
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
+            "npm:@angular-eslint/builder",
+            "npm:@angular-eslint/eslint-plugin",
+            "npm:@angular-eslint/eslint-plugin-template",
+            "npm:@angular-eslint/schematics",
+            "npm:@angular-eslint/template-parser",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@angular/language-service",
+            "npm:@nx/angular",
+            "npm:@nx/workspace",
+            "npm:@schematics/angular",
+            "npm:@types/jasmine",
+            "npm:@types/jasminewd2",
+            "npm:@types/node",
+            "npm:@types/quill",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:codelyzer",
+            "npm:eslint",
+            "npm:firebase",
+            "npm:firebaseui",
+            "npm:jasmine-core",
+            "npm:jasmine-spec-reporter",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage-istanbul-reporter",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:ng-block-ui",
+            "npm:ngx-clipboard",
+            "npm:ngx-spinner",
+            "npm:nx",
+            "npm:postcss",
+            "npm:resize-observer-polyfill",
+            "npm:saas",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "469315572369502392"
+        },
+        {
+          "file": "public/404.html",
+          "hash": "10738441453775388226"
+        },
+        {
+          "file": "public/index.html",
+          "hash": "11372152483271673007"
+        },
+        {
+          "file": "src/.DS_Store",
+          "hash": "17107500328034218420"
+        },
+        {
+          "file": "src/app/.DS_Store",
+          "hash": "2076331220936548341"
+        },
+        {
+          "file": "src/app/_api/chat/chat.service.spec.ts",
+          "hash": "5882694454843666213",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_api/chat/chat.service.ts",
+          "hash": "13673889403068911656",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/fire",
+            "npm:src/app/content/applications/chat/chats",
+            "npm:rxjs",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/app/_api/todo/todo.service.spec.ts",
+          "hash": "15347706920205780859",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_api/todo/todo.service.ts",
+          "hash": "16717441873038426090",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/fire",
+            "npm:firebase",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/_api/user/user.service.spec.ts",
+          "hash": "17364043590411942114",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_api/user/user.service.ts",
+          "hash": "317033071206389610",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/fire",
+            "npm:firebase",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/_directives/alert.component.html",
+          "hash": "14010919110351995201"
+        },
+        {
+          "file": "src/app/_directives/alert.component.ts",
+          "hash": "16545813095677204875",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/_directives/card.directive.ts",
+          "hash": "16501260807307447257",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_directives/match-height.directive.ts",
+          "hash": "3755392328047370166",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_guards/auth.guard.ts",
+          "hash": "2669240061848274958",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/_helpers/app.constants.ts",
+          "hash": "14553293924527098543"
+        },
+        {
+          "file": "src/app/_layout/blockui/block-template.component.ts",
+          "hash": "5460862932988759160",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/breadcrumb/breadcrumb.component.css",
+          "hash": "13571248354084524344"
+        },
+        {
+          "file": "src/app/_layout/breadcrumb/breadcrumb.component.html",
+          "hash": "13301513348968266573"
+        },
+        {
+          "file": "src/app/_layout/breadcrumb/breadcrumb.component.spec.ts",
+          "hash": "15494846469719060648",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/breadcrumb/breadcrumb.component.ts",
+          "hash": "16124480663405265151",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/breadcrumb/breadcrumb.module.ts",
+          "hash": "8029325775290617818",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@ng-bootstrap/ng-bootstrap"
+          ]
+        },
+        {
+          "file": "src/app/_layout/customizer/customizer.component.css",
+          "hash": "11945986607256130177"
+        },
+        {
+          "file": "src/app/_layout/customizer/customizer.component.html",
+          "hash": "3647037481685642465"
+        },
+        {
+          "file": "src/app/_layout/customizer/customizer.component.spec.ts",
+          "hash": "597268421076765388",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/customizer/customizer.component.ts",
+          "hash": "3421375114216404959",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:ngx-perfect-scrollbar",
+            "npm:@ng-bootstrap/ng-bootstrap"
+          ]
+        },
+        {
+          "file": "src/app/_layout/customizer/horizontal-customizer/horizontal-customizer.component.css",
+          "hash": "16975908500250736425"
+        },
+        {
+          "file": "src/app/_layout/customizer/horizontal-customizer/horizontal-customizer.component.html",
+          "hash": "8934209906066648040"
+        },
+        {
+          "file": "src/app/_layout/customizer/horizontal-customizer/horizontal-customizer.component.spec.ts",
+          "hash": "14438902869674045928",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/customizer/horizontal-customizer/horizontal-customizer.component.ts",
+          "hash": "6193815465332289806",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:rxjs",
+            "npm:ngx-perfect-scrollbar"
+          ]
+        },
+        {
+          "file": "src/app/_layout/footer/footer.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/footer/footer.component.html",
+          "hash": "17013232222446148763"
+        },
+        {
+          "file": "src/app/_layout/footer/footer.component.spec.ts",
+          "hash": "10929079633102897336",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/footer/footer.component.ts",
+          "hash": "17315212792717136924",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:ngx-spinner",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/_layout/full-layout/full-layout.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/full-layout/full-layout.component.html",
+          "hash": "18274026900594225861"
+        },
+        {
+          "file": "src/app/_layout/full-layout/full-layout.component.spec.ts",
+          "hash": "4055558406432032097",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/full-layout/full-layout.component.ts",
+          "hash": "465055033636480971",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/full-layout-navbar/full-layout-navbar.component.css",
+          "hash": "14626435016498519730"
+        },
+        {
+          "file": "src/app/_layout/header/full-layout-navbar/full-layout-navbar.component.html",
+          "hash": "463370870667505890"
+        },
+        {
+          "file": "src/app/_layout/header/full-layout-navbar/full-layout-navbar.component.spec.ts",
+          "hash": "637370159145554280",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/full-layout-navbar/full-layout-navbar.component.ts",
+          "hash": "6081891801829218815",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/header.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/header/header.component.html",
+          "hash": "5977172851595468879"
+        },
+        {
+          "file": "src/app/_layout/header/header.component.spec.ts",
+          "hash": "5730278812261214319",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/header.component.ts",
+          "hash": "7594660553366294859",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/horizontal/horizontal.component.css",
+          "hash": "6610131716269718654"
+        },
+        {
+          "file": "src/app/_layout/header/horizontal/horizontal.component.html",
+          "hash": "14759745696763879195"
+        },
+        {
+          "file": "src/app/_layout/header/horizontal/horizontal.component.spec.ts",
+          "hash": "14894395596374229074",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/horizontal/horizontal.component.ts",
+          "hash": "2648157860486205242",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/router",
+            "npm:ngx-perfect-scrollbar"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/vertical/vertical.component.css",
+          "hash": "3018237676016890780"
+        },
+        {
+          "file": "src/app/_layout/header/vertical/vertical.component.html",
+          "hash": "16511066104876719194"
+        },
+        {
+          "file": "src/app/_layout/header/vertical/vertical.component.spec.ts",
+          "hash": "1709425645958578596",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/header/vertical/vertical.component.ts",
+          "hash": "13441283400526338292",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/router",
+            "npm:ngx-perfect-scrollbar"
+          ]
+        },
+        {
+          "file": "src/app/_layout/navigation/horizontalnav/horizontalnav.component.css",
+          "hash": "3989753899118311908"
+        },
+        {
+          "file": "src/app/_layout/navigation/horizontalnav/horizontalnav.component.html",
+          "hash": "5937893814016100679"
+        },
+        {
+          "file": "src/app/_layout/navigation/horizontalnav/horizontalnav.component.spec.ts",
+          "hash": "12025520596508195612",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/navigation/horizontalnav/horizontalnav.component.ts",
+          "hash": "17920623996489724438",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/_layout/navigation/navigation.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/navigation/navigation.component.html",
+          "hash": "3040492562630746819"
+        },
+        {
+          "file": "src/app/_layout/navigation/navigation.component.spec.ts",
+          "hash": "5898773582348428694",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/navigation/navigation.component.ts",
+          "hash": "5672050677579723827",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/_layout/navigation/navigation.config.ts",
+          "hash": "9181408860097061653"
+        },
+        {
+          "file": "src/app/_layout/navigation/verticalnav/verticalnav.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/navigation/verticalnav/verticalnav.component.html",
+          "hash": "10103575182763625830"
+        },
+        {
+          "file": "src/app/_layout/navigation/verticalnav/verticalnav.component.spec.ts",
+          "hash": "5977724364364211554",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/navigation/verticalnav/verticalnav.component.ts",
+          "hash": "8500533508533605853",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/router",
+            "npm:ngx-perfect-scrollbar",
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "src/app/_layout/private-layout/private-layout.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/private-layout/private-layout.component.html",
+          "hash": "3644078239109978719"
+        },
+        {
+          "file": "src/app/_layout/private-layout/private-layout.component.spec.ts",
+          "hash": "2873484023723232687",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/private-layout/private-layout.component.ts",
+          "hash": "15861989460563146061",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_layout/public-layout/public-layout.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/_layout/public-layout/public-layout.component.html",
+          "hash": "6468588555176330678"
+        },
+        {
+          "file": "src/app/_layout/public-layout/public-layout.component.spec.ts",
+          "hash": "10173221977893786989",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/public-layout/public-layout.component.ts",
+          "hash": "1464965666396098185",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_layout/settings/menu-settings.config.ts",
+          "hash": "8883711711444096281"
+        },
+        {
+          "file": "src/app/_layout/settings/menu-settings.service.ts",
+          "hash": "10942043861003627721",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:lodash"
+          ]
+        },
+        {
+          "file": "src/app/_layout/settings/settings.module.ts",
+          "hash": "16765322076037375627",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/_layout/settings/theme-settings.config.ts",
+          "hash": "8134145216478198113"
+        },
+        {
+          "file": "src/app/_layout/settings/theme-settings.service.ts",
+          "hash": "11445773757349146037",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:lodash"
+          ]
+        },
+        {
+          "file": "src/app/_services/alert.service.ts",
+          "hash": "573556814272345058",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/_services/auth.service.ts",
+          "hash": "9671567820780009213",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/fire",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "src/app/_services/data.api.ts",
+          "hash": "2889057330873287551",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_services/device-detector.service.ts",
+          "hash": "9758430812447495205",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/_services/device-detector.ts",
+          "hash": "10087741819496169804"
+        },
+        {
+          "file": "src/app/_services/events.service.ts",
+          "hash": "12271531696096517567",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/fire",
+            "npm:angular-calendar"
+          ]
+        },
+        {
+          "file": "src/app/_services/navbar.service.ts",
+          "hash": "10856992903850012753",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/_services/quill-initialize-service.service.ts",
+          "hash": "9131571949647275424",
+          "deps": [
+            "npm:@angular/core",
+            "npm:quill",
+            [
+              "npm:formats/link",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "986235181088923348"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "1259731756274084346",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "13353410657435442444",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ngx-spinner",
+            "npm:@ngx-loading-bar/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/app/app.module.ts",
+          "hash": "4198358826791230051",
+          "deps": [
+            "npm:angular-calendar",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/forms",
+            "npm:@angular/common",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@angular/fire",
+            "npm:ngx-perfect-scrollbar",
+            "npm:ngx-spinner",
+            "npm:@ngx-loading-bar/router",
+            "npm:@angular/router",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/app.routing.ts",
+          "hash": "16988916158821340076",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/changelog/changelog.component.css",
+          "hash": "11600182439917368381"
+        },
+        {
+          "file": "src/app/changelog/changelog.component.html",
+          "hash": "5540766163720747326"
+        },
+        {
+          "file": "src/app/changelog/changelog.component.ts",
+          "hash": "2651024674937351612",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/changelog/index.ts",
+          "hash": "2518226271353592202"
+        },
+        {
+          "file": "src/app/content/admin/cad-eventos/cad-eventos.component.css",
+          "hash": "3703129850120159648"
+        },
+        {
+          "file": "src/app/content/admin/cad-eventos/cad-eventos.component.html",
+          "hash": "15334947024672019790"
+        },
+        {
+          "file": "src/app/content/admin/cad-eventos/cad-eventos.component.spec.ts",
+          "hash": "4288900407527033577",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/content/admin/cad-eventos/cad-eventos.component.ts",
+          "hash": "12776555799117664091",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:angular-calendar",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/content/admin/form-elements.module.ts",
+          "hash": "15248853350387891809",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@angular/forms",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/content/alunos-atividades/alunos-atividades.component.css",
+          "hash": "16849473089935211797"
+        },
+        {
+          "file": "src/app/content/alunos-atividades/alunos-atividades.component.html",
+          "hash": "12933225166143287344"
+        },
+        {
+          "file": "src/app/content/alunos-atividades/alunos-atividades.component.spec.ts",
+          "hash": "4605511453305550313",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/content/alunos-atividades/alunos-atividades.component.ts",
+          "hash": "3129367014271929119",
+          "deps": [
+            "npm:@angular/core",
+            "npm:angular-calendar",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/addevent/DateTimePickerComponent.ts",
+          "hash": "15864353982954124536",
+          "deps": [
+            "npm:@angular/core",
+            "npm:date-fns",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/addevent/addevent.component.css",
+          "hash": "5421296921555502113"
+        },
+        {
+          "file": "src/app/content/calender/addevent/addevent.component.html",
+          "hash": "12033622509986951928"
+        },
+        {
+          "file": "src/app/content/calender/addevent/addevent.component.spec.ts",
+          "hash": "9049978604902862169",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/addevent/addevent.component.ts",
+          "hash": "4434907859841394914",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:date-fns",
+            "npm:angular-calendar",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/addevent/dateTimeComponent.component.html",
+          "hash": "7643356690719818161"
+        },
+        {
+          "file": "src/app/content/calender/addevent/dateTimePickerComponent.component.css",
+          "hash": "11675450856682389311"
+        },
+        {
+          "file": "src/app/content/calender/basic/basic.component.css",
+          "hash": "9951791851183934061"
+        },
+        {
+          "file": "src/app/content/calender/basic/basic.component.html",
+          "hash": "17893090103185465690"
+        },
+        {
+          "file": "src/app/content/calender/basic/basic.component.spec.ts",
+          "hash": "9528854509051762960",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/basic/basic.component.ts",
+          "hash": "12356131384502574432",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:angular-calendar",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/calender.module.spec.ts",
+          "hash": "12996769599567093195"
+        },
+        {
+          "file": "src/app/content/calender/calender.module.ts",
+          "hash": "6533356994412036348",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:angular-calendar",
+            "npm:@angular/router",
+            "npm:angularx-flatpickr",
+            "npm:ng-block-ui",
+            "npm:@ng-bootstrap/ng-bootstrap"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/events/events.component.css",
+          "hash": "3220389846855583615"
+        },
+        {
+          "file": "src/app/content/calender/events/events.component.html",
+          "hash": "62289735240353383"
+        },
+        {
+          "file": "src/app/content/calender/events/events.component.spec.ts",
+          "hash": "7969458645071367678",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/content/calender/events/events.component.ts",
+          "hash": "3527948870185977374",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:date-fns",
+            "npm:angular-calendar",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/content/kanban/kanban/kanban.component.css",
+          "hash": "17869900952651399987"
+        },
+        {
+          "file": "src/app/content/kanban/kanban/kanban.component.html",
+          "hash": "7971350116344663460"
+        },
+        {
+          "file": "src/app/content/kanban/kanban/kanban.component.spec.ts",
+          "hash": "1948972622803310802",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/content/kanban/kanban/kanban.component.ts",
+          "hash": "15148532202103445960",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ngx-perfect-scrollbar",
+            "npm:@angular/forms",
+            "npm:quill-mention"
+          ]
+        },
+        {
+          "file": "src/app/content/kanban/kanban.module.ts",
+          "hash": "6627508207867876934",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@angular/forms",
+            "npm:@ng-select/ng-select",
+            "npm:ngx-quill",
+            "npm:ngx-perfect-scrollbar",
+            "npm:ngx-drag-and-drop-lists"
+          ]
+        },
+        {
+          "file": "src/app/content/partials/general/card/card.component.css",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "src/app/content/partials/general/card/card.component.html",
+          "hash": "13523245856070105089"
+        },
+        {
+          "file": "src/app/content/partials/general/card/card.component.ts",
+          "hash": "6683873168548974675",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ng-block-ui"
+          ]
+        },
+        {
+          "file": "src/app/content/partials/general/card/card.module.ts",
+          "hash": "5323699659026488603",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/content/partials/general/match-height/match-height.module.ts",
+          "hash": "15011853198318344962",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/content/partials/partials.module.ts",
+          "hash": "4988734584561218333",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@ng-bootstrap/ng-bootstrap"
+          ]
+        },
+        {
+          "file": "src/app/content/quill/quillAutolinks.ts",
+          "hash": "6955746043090697616",
+          "deps": [
+            "npm:quill-delta",
+            "npm:autolinker"
+          ]
+        },
+        {
+          "file": "src/app/login/index.ts",
+          "hash": "7108030097194808161"
+        },
+        {
+          "file": "src/app/login/login.component.css",
+          "hash": "13559653939639738340"
+        },
+        {
+          "file": "src/app/login/login.component.html",
+          "hash": "3772086244116823083"
+        },
+        {
+          "file": "src/app/login/login.component.ts",
+          "hash": "10616972425141914632",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/register/index.ts",
+          "hash": "2843936328447291780"
+        },
+        {
+          "file": "src/app/register/register.component.css",
+          "hash": "13559653939639738340"
+        },
+        {
+          "file": "src/app/register/register.component.html",
+          "hash": "17954205168978863145"
+        },
+        {
+          "file": "src/app/register/register.component.ts",
+          "hash": "14114160664526392854",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/social-signin/social-signin.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/social-signin/social-signin.component.html",
+          "hash": "1990146119459128476"
+        },
+        {
+          "file": "src/app/social-signin/social-signin.component.spec.ts",
+          "hash": "350899156354920427",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/social-signin/social-signin.component.ts",
+          "hash": "3807971135665519662",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/assets/.DS_Store",
+          "hash": "18300209381351148947"
+        },
+        {
+          "file": "src/assets/custom/images/logo.png",
+          "hash": "11143655892278312605"
+        },
+        {
+          "file": "src/assets/custom/images/logo2.png",
+          "hash": "14999824414291261501"
+        },
+        {
+          "file": "src/assets/custom/images/logo3.png",
+          "hash": "14543582296337920891"
+        },
+        {
+          "file": "src/assets/data/application/chatcontact.json",
+          "hash": "7054361385883242923"
+        },
+        {
+          "file": "src/assets/data/application/chats.json",
+          "hash": "8832140882404626245"
+        },
+        {
+          "file": "src/assets/data/application/email.json",
+          "hash": "10140002226607113012"
+        },
+        {
+          "file": "src/assets/data/application/kanban.json",
+          "hash": "641177448762361710"
+        },
+        {
+          "file": "src/assets/data/application/todo.json",
+          "hash": "13942059346736653784"
+        },
+        {
+          "file": "src/assets/data/application/todo_lable.json",
+          "hash": "1044411387369924951"
+        },
+        {
+          "file": "src/assets/data/customizer/customizerColor.json",
+          "hash": "10264533389201638626"
+        },
+        {
+          "file": "src/assets/fonts/feather/fonts/feather.eot",
+          "hash": "15918033424452860538"
+        },
+        {
+          "file": "src/assets/fonts/feather/fonts/feather.svg",
+          "hash": "10815216620355599578"
+        },
+        {
+          "file": "src/assets/fonts/feather/fonts/feather.ttf",
+          "hash": "6099993556084927689"
+        },
+        {
+          "file": "src/assets/fonts/feather/fonts/feather.woff",
+          "hash": "7429280981487670849"
+        },
+        {
+          "file": "src/assets/fonts/feather/style.css",
+          "hash": "2086193565993503040"
+        },
+        {
+          "file": "src/assets/fonts/feather/style.min.css",
+          "hash": "614641079903045197"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/LICENSE",
+          "hash": "13794757238817107129"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/README.md",
+          "hash": "8642545919787088751"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/css/flag-icon.css",
+          "hash": "11331433455513026806"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/css/flag-icon.min.css",
+          "hash": "6681855094896577683"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ad.svg",
+          "hash": "1707225637216356110"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ae.svg",
+          "hash": "816666170895073734"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/af.svg",
+          "hash": "9807829725295235239"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ag.svg",
+          "hash": "8855162749096072574"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ai.svg",
+          "hash": "8046760702002431519"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/al.svg",
+          "hash": "10580334207831009837"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/am.svg",
+          "hash": "1485516708424668439"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ao.svg",
+          "hash": "9036333614726378410"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/aq.svg",
+          "hash": "1897121263894928006"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ar.svg",
+          "hash": "12513546660971769017"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/as.svg",
+          "hash": "8391371174318867647"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/at.svg",
+          "hash": "9578444920334509683"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/au.svg",
+          "hash": "4089490210299044911"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/aw.svg",
+          "hash": "6584831391282001458"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ax.svg",
+          "hash": "9540945406725994348"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/az.svg",
+          "hash": "5060566719840894494"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ba.svg",
+          "hash": "10852161185398491053"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bb.svg",
+          "hash": "7847189155073769733"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bd.svg",
+          "hash": "11620062445348064360"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/be.svg",
+          "hash": "3301122010915176265"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bf.svg",
+          "hash": "7723254601860726052"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bg.svg",
+          "hash": "1412704086853444910"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bh.svg",
+          "hash": "8633556363387727980"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bi.svg",
+          "hash": "10502718726245220323"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bj.svg",
+          "hash": "5319557802463488895"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bl.svg",
+          "hash": "4879843925505382154"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bm.svg",
+          "hash": "8858943595825232701"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bn.svg",
+          "hash": "15989271060506876317"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bo.svg",
+          "hash": "8113793314454209170"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bq.svg",
+          "hash": "13340591596407822996"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/br.svg",
+          "hash": "4395364396372720820"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bs.svg",
+          "hash": "2593774823158978451"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bt.svg",
+          "hash": "15113593737401520850"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bv.svg",
+          "hash": "7422051333297772620"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bw.svg",
+          "hash": "11087643041045395639"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/by.svg",
+          "hash": "7418824740254561206"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/bz.svg",
+          "hash": "2238763683687525793"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ca.svg",
+          "hash": "11324750456345555241"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cc.svg",
+          "hash": "4346199476438269522"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cd.svg",
+          "hash": "1597132277313164515"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cf.svg",
+          "hash": "15056006129486405128"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cg.svg",
+          "hash": "8194971685548674177"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ch.svg",
+          "hash": "13452565245636104642"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ci.svg",
+          "hash": "286927979191047031"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ck.svg",
+          "hash": "9020530683975668473"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cl.svg",
+          "hash": "559426322415895339"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cm.svg",
+          "hash": "5458921171001708328"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cn.svg",
+          "hash": "3756676690800661767"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/co.svg",
+          "hash": "14403695286384441754"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cr.svg",
+          "hash": "6806073251128956280"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cu.svg",
+          "hash": "12349370406792128220"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cv.svg",
+          "hash": "5035828999353691892"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cw.svg",
+          "hash": "7127991716126277931"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cx.svg",
+          "hash": "4005967297717417374"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cy.svg",
+          "hash": "16282664123246945222"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/cz.svg",
+          "hash": "12013074419556357005"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/de.svg",
+          "hash": "16135536188293872505"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/dj.svg",
+          "hash": "15360055596013619187"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/dk.svg",
+          "hash": "10853749539770049310"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/dm.svg",
+          "hash": "10130110565869810594"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/do.svg",
+          "hash": "17025099261292435043"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/dz.svg",
+          "hash": "1328970785019861666"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ec.svg",
+          "hash": "12029011544282707079"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ee.svg",
+          "hash": "5029081209326349831"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/eg.svg",
+          "hash": "2890604467376781129"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/eh.svg",
+          "hash": "3519388376719892954"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/er.svg",
+          "hash": "4550096648857544638"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/es.svg",
+          "hash": "14021809759666021501"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/et.svg",
+          "hash": "16220304416857303840"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/eu.svg",
+          "hash": "10838873942076157112"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/fi.svg",
+          "hash": "2758290567512354967"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/fj.svg",
+          "hash": "11505543494127130859"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/fk.svg",
+          "hash": "8437386975549287449"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/fm.svg",
+          "hash": "15673361385366454504"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/fo.svg",
+          "hash": "749689167126894337"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/fr.svg",
+          "hash": "4879843925505382154"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ga.svg",
+          "hash": "15502212471027895757"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gb-eng.svg",
+          "hash": "7439780590148810601"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gb-sct.svg",
+          "hash": "9312599281994173784"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gb-wls.svg",
+          "hash": "12545125058148885082"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gb.svg",
+          "hash": "6982285696318238861"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gd.svg",
+          "hash": "15474250241663462551"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ge.svg",
+          "hash": "14898940659901908718"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gf.svg",
+          "hash": "14928608959352281471"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gg.svg",
+          "hash": "18300458939185661025"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gh.svg",
+          "hash": "9653538111308152405"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gi.svg",
+          "hash": "13537238497300003254"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gl.svg",
+          "hash": "790537295615388072"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gm.svg",
+          "hash": "11761270641441798371"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gn.svg",
+          "hash": "15384984701318247021"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gp.svg",
+          "hash": "4879843925505382154"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gq.svg",
+          "hash": "10638321552478092780"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gr.svg",
+          "hash": "2488334919575359591"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gs.svg",
+          "hash": "4588088945130085568"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gt.svg",
+          "hash": "5827983177744242629"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gu.svg",
+          "hash": "14257967870966521932"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gw.svg",
+          "hash": "14959375065597475157"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/gy.svg",
+          "hash": "1716180463878309738"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/hk.svg",
+          "hash": "2476799488497092367"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/hm.svg",
+          "hash": "5121698109273065393"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/hn.svg",
+          "hash": "11362657264863858547"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/hr.svg",
+          "hash": "15857816377837001900"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ht.svg",
+          "hash": "9917992063180052079"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/hu.svg",
+          "hash": "803314811725176437"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/id.svg",
+          "hash": "11568012519898009709"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ie.svg",
+          "hash": "15533437814673140093"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/il.svg",
+          "hash": "5048512749955963969"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/im.svg",
+          "hash": "7690559855287909666"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/in.svg",
+          "hash": "2319921573465466652"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/io.svg",
+          "hash": "17924917186837251914"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/iq.svg",
+          "hash": "8794269800969649130"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ir.svg",
+          "hash": "15229246445962117692"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/is.svg",
+          "hash": "751040567567539881"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/it.svg",
+          "hash": "3173486914765182423"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/je.svg",
+          "hash": "15521317478425390833"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/jm.svg",
+          "hash": "5106529483609610303"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/jo.svg",
+          "hash": "456682721987846750"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/jp.svg",
+          "hash": "5853942598865405594"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ke.svg",
+          "hash": "972665157509457825"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kg.svg",
+          "hash": "12832397970680236479"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kh.svg",
+          "hash": "9840613830539611750"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ki.svg",
+          "hash": "17776522877167553985"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/km.svg",
+          "hash": "15639183113214598954"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kn.svg",
+          "hash": "14584542408168135235"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kp.svg",
+          "hash": "9968187186828716432"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kr.svg",
+          "hash": "15099221961740260823"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kw.svg",
+          "hash": "15830683244976550106"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ky.svg",
+          "hash": "8289013860687566488"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/kz.svg",
+          "hash": "11195815441963254615"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/la.svg",
+          "hash": "13543957243093224574"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lb.svg",
+          "hash": "17541620528421809904"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lc.svg",
+          "hash": "17692523186152627180"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/li.svg",
+          "hash": "15934261931022129674"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lk.svg",
+          "hash": "4429376799499145486"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lr.svg",
+          "hash": "14285993658490516294"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ls.svg",
+          "hash": "6567443595624501437"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lt.svg",
+          "hash": "7481152120420636259"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lu.svg",
+          "hash": "2496399827821683906"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/lv.svg",
+          "hash": "15452496519447485501"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ly.svg",
+          "hash": "15198393479288662211"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ma.svg",
+          "hash": "970505363812410804"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mc.svg",
+          "hash": "8943737987502323405"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/md.svg",
+          "hash": "7708989540546744297"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/me.svg",
+          "hash": "15228560933208843477"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mf.svg",
+          "hash": "8384022318647742030"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mg.svg",
+          "hash": "15173002509994608110"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mh.svg",
+          "hash": "12060236075943844375"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mk.svg",
+          "hash": "6621651875557775646"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ml.svg",
+          "hash": "15837580632445088653"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mm.svg",
+          "hash": "15803668597293114871"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mn.svg",
+          "hash": "14675129980425074298"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mo.svg",
+          "hash": "1607398850089163809"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mp.svg",
+          "hash": "17197840961483996198"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mq.svg",
+          "hash": "6393464615520651534"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mr.svg",
+          "hash": "18280931594643857254"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ms.svg",
+          "hash": "4288987310693984180"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mt.svg",
+          "hash": "4933122388550305005"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mu.svg",
+          "hash": "2524006053927801143"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mv.svg",
+          "hash": "3879079474311860109"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mw.svg",
+          "hash": "11287591609364819776"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mx.svg",
+          "hash": "2677718088925078860"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/my.svg",
+          "hash": "4079282330267416505"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/mz.svg",
+          "hash": "8652626195274441609"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/na.svg",
+          "hash": "11155506042634995896"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/nc.svg",
+          "hash": "12787924482260273567"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ne.svg",
+          "hash": "16825014080056337061"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/nf.svg",
+          "hash": "15748540439175332578"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ng.svg",
+          "hash": "13694351207385171599"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ni.svg",
+          "hash": "40634957110763648"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/nl.svg",
+          "hash": "7800725976288222706"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/no.svg",
+          "hash": "12256419001993268606"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/np.svg",
+          "hash": "13417192340429246390"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/nr.svg",
+          "hash": "1743356415490693919"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/nu.svg",
+          "hash": "3692786909996890910"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/nz.svg",
+          "hash": "1879101788901765632"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/om.svg",
+          "hash": "458772036808548727"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pa.svg",
+          "hash": "14723907787766123733"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pe.svg",
+          "hash": "13109707195847468061"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pf.svg",
+          "hash": "15488267174703527721"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pg.svg",
+          "hash": "13679784162973359264"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ph.svg",
+          "hash": "8348628324203993640"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pk.svg",
+          "hash": "10534596918326884583"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pl.svg",
+          "hash": "17529242786113905458"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pm.svg",
+          "hash": "12236608537983246312"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pn.svg",
+          "hash": "11187067343318338382"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pr.svg",
+          "hash": "5771702906577952497"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ps.svg",
+          "hash": "196205276652213268"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pt.svg",
+          "hash": "4017495590980873096"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/pw.svg",
+          "hash": "12603070395511045257"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/py.svg",
+          "hash": "2678652394824704908"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/qa.svg",
+          "hash": "14637034506177604658"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/re.svg",
+          "hash": "5693673181967120742"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ro.svg",
+          "hash": "1830005058897068752"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/rs.svg",
+          "hash": "1850549711684408914"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ru.svg",
+          "hash": "14952691045294395366"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/rw.svg",
+          "hash": "14396943045591492608"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sa.svg",
+          "hash": "8072837045892599931"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sb.svg",
+          "hash": "4356728900223816532"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sc.svg",
+          "hash": "18136452196927868259"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sd.svg",
+          "hash": "17141762181056479456"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/se.svg",
+          "hash": "1060327866627123832"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sg.svg",
+          "hash": "11871121224876074349"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sh.svg",
+          "hash": "3475206815109903981"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/si.svg",
+          "hash": "11868862199801397685"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sj.svg",
+          "hash": "299240609403720715"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sk.svg",
+          "hash": "14227157202105931392"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sl.svg",
+          "hash": "8883433648167754772"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sm.svg",
+          "hash": "18440320686777308277"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sn.svg",
+          "hash": "16926192150664511066"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/so.svg",
+          "hash": "1488140454292511347"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sr.svg",
+          "hash": "18280518516811185375"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ss.svg",
+          "hash": "13056235727656325934"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/st.svg",
+          "hash": "10782303290652321236"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sv.svg",
+          "hash": "6205925222725944376"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sx.svg",
+          "hash": "2121863172117332779"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sy.svg",
+          "hash": "17184827424902292644"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/sz.svg",
+          "hash": "14218065771045042596"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tc.svg",
+          "hash": "17540035728731314436"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/td.svg",
+          "hash": "7255190796562763609"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tf.svg",
+          "hash": "12393971395881969149"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tg.svg",
+          "hash": "5196459782396028023"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/th.svg",
+          "hash": "13494905414740423409"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tj.svg",
+          "hash": "8404965213969337873"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tk.svg",
+          "hash": "15571572029284839762"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tl.svg",
+          "hash": "10899268351864668373"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tm.svg",
+          "hash": "17122878825685763626"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tn.svg",
+          "hash": "1201140145049101180"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/to.svg",
+          "hash": "14817420340754792327"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tr.svg",
+          "hash": "6891947567898587505"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tt.svg",
+          "hash": "18045757382112217091"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tv.svg",
+          "hash": "12332122900040354680"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tw.svg",
+          "hash": "17393798843886988696"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/tz.svg",
+          "hash": "14623893321245313218"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ua.svg",
+          "hash": "7022889206459686830"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ug.svg",
+          "hash": "13767692016168613836"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/um.svg",
+          "hash": "10517792516416765302"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/us.svg",
+          "hash": "13277073392392083755"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/uy.svg",
+          "hash": "3805953804379875060"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/uz.svg",
+          "hash": "7551995427938308119"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/va.svg",
+          "hash": "17863789709732448299"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/vc.svg",
+          "hash": "12865685287778259215"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ve.svg",
+          "hash": "3402027123452634278"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/vg.svg",
+          "hash": "17207986304274853292"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/vi.svg",
+          "hash": "8416320699095646024"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/vn.svg",
+          "hash": "11242164989659692713"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/vu.svg",
+          "hash": "15086223568658085767"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/wf.svg",
+          "hash": "15740514250847266822"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ws.svg",
+          "hash": "14195236762617531334"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/ye.svg",
+          "hash": "13771554926337900165"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/yt.svg",
+          "hash": "3481511108566936842"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/za.svg",
+          "hash": "4468140107322266540"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/zm.svg",
+          "hash": "8096843091402655562"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/zw.svg",
+          "hash": "16498552350690509281"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/1x1/zz.svg",
+          "hash": "10884178151564351654"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ad.svg",
+          "hash": "16602036354716398920"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ae.svg",
+          "hash": "10519409526241262304"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/af.svg",
+          "hash": "1337601890310944610"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ag.svg",
+          "hash": "13801662977699015678"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ai.svg",
+          "hash": "13090002754678986564"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/al.svg",
+          "hash": "1140094906778238336"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/am.svg",
+          "hash": "13179646479776425409"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ao.svg",
+          "hash": "13077343994733146807"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/aq.svg",
+          "hash": "13688286383898665052"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ar.svg",
+          "hash": "11211934981325837882"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/as.svg",
+          "hash": "8875863699713148596"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/at.svg",
+          "hash": "13407533363336726711"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/au.svg",
+          "hash": "15220598552629734633"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/aw.svg",
+          "hash": "9153483805543869922"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ax.svg",
+          "hash": "12094277870322410360"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/az.svg",
+          "hash": "2318217398895465126"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ba.svg",
+          "hash": "6305282885588746055"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bb.svg",
+          "hash": "17183316921298884677"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bd.svg",
+          "hash": "13159364484814847203"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/be.svg",
+          "hash": "14941243219467504036"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bf.svg",
+          "hash": "2200090071902490156"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bg.svg",
+          "hash": "6945927233952887582"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bh.svg",
+          "hash": "11836561179139338969"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bi.svg",
+          "hash": "350336847606613091"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bj.svg",
+          "hash": "4786498121938132954"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bl.svg",
+          "hash": "12780071349441220774"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bm.svg",
+          "hash": "8012327607539537584"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bn.svg",
+          "hash": "2415756953790188876"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bo.svg",
+          "hash": "1817491092867370231"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bq.svg",
+          "hash": "16707931899174720721"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/br.svg",
+          "hash": "11847474951129214413"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bs.svg",
+          "hash": "11215035248701270490"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bt.svg",
+          "hash": "345471159757684255"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bv.svg",
+          "hash": "1113850702388968313"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bw.svg",
+          "hash": "9307150392206328413"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/by.svg",
+          "hash": "3811003609783642737"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/bz.svg",
+          "hash": "7376018179603414890"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ca.svg",
+          "hash": "11166734225286950196"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cc.svg",
+          "hash": "7086534641520214435"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cd.svg",
+          "hash": "15181015858385694765"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cf.svg",
+          "hash": "17807900483109893795"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cg.svg",
+          "hash": "3458026228219229500"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ch.svg",
+          "hash": "6454963484736520179"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ci.svg",
+          "hash": "5926672027331777262"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ck.svg",
+          "hash": "122753058714971964"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cl.svg",
+          "hash": "17870899014858138733"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cm.svg",
+          "hash": "656070142047863606"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cn.svg",
+          "hash": "676366384079957853"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/co.svg",
+          "hash": "7921314561238998449"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cr.svg",
+          "hash": "13367268260349426018"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cu.svg",
+          "hash": "15846466086559356100"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cv.svg",
+          "hash": "4486106036747987144"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cw.svg",
+          "hash": "9343032288359668288"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cx.svg",
+          "hash": "9170393914360709075"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cy.svg",
+          "hash": "3390262009263616105"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/cz.svg",
+          "hash": "11179559393437815042"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/de.svg",
+          "hash": "6931231014436848493"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/dj.svg",
+          "hash": "13926534236925205113"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/dk.svg",
+          "hash": "13091087225768512518"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/dm.svg",
+          "hash": "3791788564786765081"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/do.svg",
+          "hash": "13639129705854495302"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/dz.svg",
+          "hash": "18244853585788140308"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ec.svg",
+          "hash": "7106767703441004056"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ee.svg",
+          "hash": "7475239156794408111"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/eg.svg",
+          "hash": "12469189572722810194"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/eh.svg",
+          "hash": "5743364384780450581"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/er.svg",
+          "hash": "6956887059998720105"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/es.svg",
+          "hash": "4492711234050170585"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/et.svg",
+          "hash": "8179859540646124981"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/eu.svg",
+          "hash": "3372915941019429016"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/fi.svg",
+          "hash": "7385987838235834378"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/fj.svg",
+          "hash": "14838361939903601902"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/fk.svg",
+          "hash": "11741003931303205916"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/fm.svg",
+          "hash": "9364615723582592565"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/fo.svg",
+          "hash": "13511399880434628360"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/fr.svg",
+          "hash": "14256644650391614197"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ga.svg",
+          "hash": "18325272103415834872"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gb-eng.svg",
+          "hash": "8221902780556545916"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gb-sct.svg",
+          "hash": "5439588415080554361"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gb-wls.svg",
+          "hash": "2990519213316774553"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gb.svg",
+          "hash": "18167421624385987331"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gd.svg",
+          "hash": "12355636737358368203"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ge.svg",
+          "hash": "12863689932729362791"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gf.svg",
+          "hash": "10742176172121996659"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gg.svg",
+          "hash": "12543127075707443598"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gh.svg",
+          "hash": "5713188013784743973"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gi.svg",
+          "hash": "2735628768368004496"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gl.svg",
+          "hash": "13626873416702576013"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gm.svg",
+          "hash": "5475958164683317316"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gn.svg",
+          "hash": "8855606226449828841"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gp.svg",
+          "hash": "14256644650391614197"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gq.svg",
+          "hash": "18061842763623072552"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gr.svg",
+          "hash": "15825441131075102274"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gs.svg",
+          "hash": "833116099175951323"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gt.svg",
+          "hash": "7099091847599867804"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gu.svg",
+          "hash": "3491067200433670145"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gw.svg",
+          "hash": "7951438434364142303"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/gy.svg",
+          "hash": "15716971721427259814"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/hk.svg",
+          "hash": "12913042806754657156"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/hm.svg",
+          "hash": "8987946050614810338"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/hn.svg",
+          "hash": "17798889960645151164"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/hr.svg",
+          "hash": "7337530387950036991"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ht.svg",
+          "hash": "12900966143460623453"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/hu.svg",
+          "hash": "10935347473722685360"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/id.svg",
+          "hash": "7671596740208762501"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ie.svg",
+          "hash": "11169378040083180061"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/il.svg",
+          "hash": "8223792105141925402"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/im.svg",
+          "hash": "7340130415563858383"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/in.svg",
+          "hash": "14786472274070656871"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/io.svg",
+          "hash": "16587307834890688349"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/iq.svg",
+          "hash": "10190456345537405075"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ir.svg",
+          "hash": "16403263770168148616"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/is.svg",
+          "hash": "3156503855513802674"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/it.svg",
+          "hash": "17180804711018436833"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/je.svg",
+          "hash": "11408778239975219781"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/jm.svg",
+          "hash": "8370871503236910451"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/jo.svg",
+          "hash": "7091309273804002682"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/jp.svg",
+          "hash": "6943420184460100083"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ke.svg",
+          "hash": "14258886737216807147"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kg.svg",
+          "hash": "6689040311284355915"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kh.svg",
+          "hash": "16178221647562252332"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ki.svg",
+          "hash": "6630014308018164611"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/km.svg",
+          "hash": "9804249385906515257"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kn.svg",
+          "hash": "355846657715892294"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kp.svg",
+          "hash": "5444203760476566610"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kr.svg",
+          "hash": "4774436534307913931"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kw.svg",
+          "hash": "238860286609482070"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ky.svg",
+          "hash": "13011257311888612289"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/kz.svg",
+          "hash": "5655058812918685674"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/la.svg",
+          "hash": "15993892606536034824"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lb.svg",
+          "hash": "1812574013568277399"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lc.svg",
+          "hash": "7442079642441291735"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/li.svg",
+          "hash": "869869336856915781"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lk.svg",
+          "hash": "10096770588241886354"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lr.svg",
+          "hash": "5109920520663725142"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ls.svg",
+          "hash": "2199325404064066781"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lt.svg",
+          "hash": "7137243832798367482"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lu.svg",
+          "hash": "1283254472874917654"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/lv.svg",
+          "hash": "1398342696994715597"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ly.svg",
+          "hash": "15009275685111315033"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ma.svg",
+          "hash": "2224880121453636694"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mc.svg",
+          "hash": "15749710499614107371"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/md.svg",
+          "hash": "15296380499452638089"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/me.svg",
+          "hash": "10582409159207599554"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mf.svg",
+          "hash": "452406422656036111"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mg.svg",
+          "hash": "12842540000165118812"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mh.svg",
+          "hash": "17072230490848794351"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mk.svg",
+          "hash": "2683442620059560439"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ml.svg",
+          "hash": "6619350462442366818"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mm.svg",
+          "hash": "15767150746096787651"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mn.svg",
+          "hash": "4009811144034415849"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mo.svg",
+          "hash": "892704309864342277"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mp.svg",
+          "hash": "1902673118845223592"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mq.svg",
+          "hash": "109831069108682602"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mr.svg",
+          "hash": "18236917600016372169"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ms.svg",
+          "hash": "8023921603386498143"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mt.svg",
+          "hash": "14429735135196144772"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mu.svg",
+          "hash": "16020223919985524560"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mv.svg",
+          "hash": "12625646807984698523"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mw.svg",
+          "hash": "17485693369808466114"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mx.svg",
+          "hash": "2863779654176050212"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/my.svg",
+          "hash": "7922716888081237927"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/mz.svg",
+          "hash": "3877082977269088663"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/na.svg",
+          "hash": "7776551526975475901"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/nc.svg",
+          "hash": "2100085463587823128"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ne.svg",
+          "hash": "5818135058578771208"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/nf.svg",
+          "hash": "11370593304667779805"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ng.svg",
+          "hash": "15289073398551629162"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ni.svg",
+          "hash": "15164444040897815961"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/nl.svg",
+          "hash": "8510559043620440914"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/no.svg",
+          "hash": "7832266309439979031"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/np.svg",
+          "hash": "6994877177241786444"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/nr.svg",
+          "hash": "8509557676180863205"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/nu.svg",
+          "hash": "12037033100963903721"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/nz.svg",
+          "hash": "8197525686963280762"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/om.svg",
+          "hash": "6660958371444137901"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pa.svg",
+          "hash": "11711872819252728846"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pe.svg",
+          "hash": "16980871843923226632"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pf.svg",
+          "hash": "13997031910103822665"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pg.svg",
+          "hash": "13330127665489218420"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ph.svg",
+          "hash": "10456335870077064857"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pk.svg",
+          "hash": "15052174283181349114"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pl.svg",
+          "hash": "13792018604604075578"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pm.svg",
+          "hash": "303234791473439642"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pn.svg",
+          "hash": "2616581922105988452"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pr.svg",
+          "hash": "2973689544032227868"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ps.svg",
+          "hash": "9489898168827341021"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pt.svg",
+          "hash": "3452235904044268289"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/pw.svg",
+          "hash": "16329399825277007144"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/py.svg",
+          "hash": "15820864188074118626"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/qa.svg",
+          "hash": "15270724956158779195"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/re.svg",
+          "hash": "6013746505983168108"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ro.svg",
+          "hash": "16614043847525325358"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/rs.svg",
+          "hash": "5680502002317689997"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ru.svg",
+          "hash": "18341130991620994259"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/rw.svg",
+          "hash": "10741013213648925714"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sa.svg",
+          "hash": "18100994814101068505"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sb.svg",
+          "hash": "4451535987231254756"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sc.svg",
+          "hash": "8586297799130544020"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sd.svg",
+          "hash": "11535216098025116373"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/se.svg",
+          "hash": "7622657722673068991"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sg.svg",
+          "hash": "6136957375586188731"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sh.svg",
+          "hash": "7541568419735249621"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/si.svg",
+          "hash": "6359032298107947700"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sj.svg",
+          "hash": "15449570617658368357"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sk.svg",
+          "hash": "10885823839262099612"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sl.svg",
+          "hash": "2756607065098465584"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sm.svg",
+          "hash": "3436448679164572440"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sn.svg",
+          "hash": "11268785777501783373"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/so.svg",
+          "hash": "10812058499805298901"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sr.svg",
+          "hash": "5606600853507878952"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ss.svg",
+          "hash": "7007688268122560220"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/st.svg",
+          "hash": "6616466704484019430"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sv.svg",
+          "hash": "3691982841514348004"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sx.svg",
+          "hash": "3743136883624734598"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sy.svg",
+          "hash": "413042106526437401"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/sz.svg",
+          "hash": "14320863741382593332"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tc.svg",
+          "hash": "10001023773761800939"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/td.svg",
+          "hash": "10603229907878672107"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tf.svg",
+          "hash": "1901583618060305548"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tg.svg",
+          "hash": "5629166909932014229"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/th.svg",
+          "hash": "12863120107841444186"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tj.svg",
+          "hash": "11097888554681408331"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tk.svg",
+          "hash": "15734919982178382836"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tl.svg",
+          "hash": "13428693213463556095"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tm.svg",
+          "hash": "1032904089576804196"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tn.svg",
+          "hash": "12826855833664766098"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/to.svg",
+          "hash": "5456116710675358199"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tr.svg",
+          "hash": "4172255232495897811"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tt.svg",
+          "hash": "2709546130375469058"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tv.svg",
+          "hash": "11494263744506330652"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tw.svg",
+          "hash": "17482387523681211374"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/tz.svg",
+          "hash": "11745052089668429412"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ua.svg",
+          "hash": "3765952427326784445"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ug.svg",
+          "hash": "13267020608142893124"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/um.svg",
+          "hash": "5544306965965147684"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/us.svg",
+          "hash": "995249234444079638"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/uy.svg",
+          "hash": "9982511850104368369"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/uz.svg",
+          "hash": "11078526924353228170"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/va.svg",
+          "hash": "7590402096507340486"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/vc.svg",
+          "hash": "12907859640796321526"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ve.svg",
+          "hash": "5331412327335591496"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/vg.svg",
+          "hash": "286963087031360677"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/vi.svg",
+          "hash": "443941920638570184"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/vn.svg",
+          "hash": "18062554335329744616"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/vu.svg",
+          "hash": "17838570818918362358"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/wf.svg",
+          "hash": "7423333900350611931"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ws.svg",
+          "hash": "15498359960322183614"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/ye.svg",
+          "hash": "12204226431000771195"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/yt.svg",
+          "hash": "8227771370366212596"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/za.svg",
+          "hash": "17824182082684154832"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/zm.svg",
+          "hash": "8751112628466751951"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/zw.svg",
+          "hash": "16321918087667160584"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/flags/4x3/zz.svg",
+          "hash": "1235566271730124016"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/do.svg",
+          "hash": "13639129705854495302"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/flag-icon-base.scss",
+          "hash": "16372997394309544788"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/flag-icon-list.scss",
+          "hash": "17694803538323945276"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/flag-icon-more.scss",
+          "hash": "11723902715989155664"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/flag-icon.css",
+          "hash": "6894695936336129988"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/flag-icon.scss",
+          "hash": "18282427745785304127"
+        },
+        {
+          "file": "src/assets/fonts/flag-icon-css/sass/variables.scss",
+          "hash": "2080050079988775491"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/css/line-awesome-font-awesome.css",
+          "hash": "1721707507376646818"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/css/line-awesome-font-awesome.min.css",
+          "hash": "12957827060768740992"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/css/line-awesome.css",
+          "hash": "18227763825963378355"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/css/line-awesome.min.css",
+          "hash": "14525007813664487486"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/fonts/line-awesome.eot",
+          "hash": "10692589523833427781"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/fonts/line-awesome.svg",
+          "hash": "14637419150213156504"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/fonts/line-awesome.ttf",
+          "hash": "14867875024868699833"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/fonts/line-awesome.woff",
+          "hash": "14420823722451194095"
+        },
+        {
+          "file": "src/assets/fonts/line-awesome/fonts/line-awesome.woff2",
+          "hash": "10437602286435013800"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/fonts/meteocons.eot",
+          "hash": "13134512708909460054"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/fonts/meteocons.svg",
+          "hash": "10063493606454598088"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/fonts/meteocons.ttf",
+          "hash": "7128891675639087321"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/fonts/meteocons.woff",
+          "hash": "7840731665011999303"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/style-origin.css",
+          "hash": "775275651943127560"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/style.css",
+          "hash": "9188679047047179695"
+        },
+        {
+          "file": "src/assets/fonts/meteocons/style.min.css",
+          "hash": "1748906403449755567"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/fonts/Simple-Line-Icons.dev.svg",
+          "hash": "16290359948243542521"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/fonts/Simple-Line-Icons.eot",
+          "hash": "17230654116023480854"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/fonts/Simple-Line-Icons.svg",
+          "hash": "2776089174985218679"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/fonts/Simple-Line-Icons.ttf",
+          "hash": "1721692630287669728"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/fonts/Simple-Line-Icons.woff",
+          "hash": "15413896263223209747"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/style-origin.css",
+          "hash": "16756187030172351367"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/style.css",
+          "hash": "13342038403724565455"
+        },
+        {
+          "file": "src/assets/fonts/simple-line-icons/style.min.css",
+          "hash": "10078069326308203981"
+        },
+        {
+          "file": "src/assets/fonts/summernote/summernote.eot",
+          "hash": "16143057835115367604"
+        },
+        {
+          "file": "src/assets/fonts/summernote/summernote.ttf",
+          "hash": "1708288651455093226"
+        },
+        {
+          "file": "src/assets/fonts/summernote/summernote.woff",
+          "hash": "11287619737271138017"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/readme.md",
+          "hash": "16988609043881122285"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce-small.eot",
+          "hash": "13239969726630113297"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce-small.json",
+          "hash": "2111392786253702613"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce-small.svg",
+          "hash": "16776370567304497715"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce-small.ttf",
+          "hash": "3884098269146724789"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce-small.woff",
+          "hash": "3891872125896046344"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce.eot",
+          "hash": "73108566765354160"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce.json",
+          "hash": "309804734608832328"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce.svg",
+          "hash": "9273813200145442780"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce.ttf",
+          "hash": "7531225584688439233"
+        },
+        {
+          "file": "src/assets/fonts/tinymce/tinymce.woff",
+          "hash": "14657366454267205670"
+        },
+        {
+          "file": "src/assets/images/avatar.jpg",
+          "hash": "594280318685777304"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-1.jpg",
+          "hash": "11482778739716120018"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-10.jpg",
+          "hash": "10876233414214802108"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-11.jpg",
+          "hash": "15107387554467119337"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-12.jpg",
+          "hash": "15897769447642891001"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-14.jpg",
+          "hash": "17115625190821370521"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-2.jpg",
+          "hash": "8213360796667868749"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-3.jpg",
+          "hash": "11763606908067372088"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-4.jpg",
+          "hash": "5051506665350381811"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-5.jpg",
+          "hash": "16281935077145643843"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-6.jpg",
+          "hash": "8945682874890892361"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-7.jpg",
+          "hash": "15875989509606998144"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-8.jpg",
+          "hash": "12220284534201353416"
+        },
+        {
+          "file": "src/assets/images/backgrounds/bg-9.jpg",
+          "hash": "814193146983191277"
+        },
+        {
+          "file": "src/assets/images/backgrounds/breadcrumb.png",
+          "hash": "14277627327602498267"
+        },
+        {
+          "file": "src/assets/images/backgrounds/dark-menu.jpg",
+          "hash": "13202422889715772501"
+        },
+        {
+          "file": "src/assets/images/backgrounds/fb.jpg",
+          "hash": "5734224254559519352"
+        },
+        {
+          "file": "src/assets/images/backgrounds/ice.png",
+          "hash": "4308541792048319302"
+        },
+        {
+          "file": "src/assets/images/backgrounds/in.jpg",
+          "hash": "17921478974786403149"
+        },
+        {
+          "file": "src/assets/images/backgrounds/laptop.jpg",
+          "hash": "7124740800210344519"
+        },
+        {
+          "file": "src/assets/images/backgrounds/left-menu-bg.jpg",
+          "hash": "143959262657920143"
+        },
+        {
+          "file": "src/assets/images/backgrounds/mountain.png",
+          "hash": "240683333582455189"
+        },
+        {
+          "file": "src/assets/images/backgrounds/snow_rain.gif",
+          "hash": "4453789947015420999"
+        },
+        {
+          "file": "src/assets/images/backgrounds/todo.jpeg",
+          "hash": "10545159574574807699"
+        },
+        {
+          "file": "src/assets/images/backgrounds/tw.jpg",
+          "hash": "11704260267345210000"
+        },
+        {
+          "file": "src/assets/images/backgrounds/wind_turbine.gif",
+          "hash": "13473695643176844421"
+        },
+        {
+          "file": "src/assets/images/crop-pic.jpg",
+          "hash": "13168225054358640545"
+        },
+        {
+          "file": "src/assets/images/datatables/resources/details_close.png",
+          "hash": "1741839062636572009"
+        },
+        {
+          "file": "src/assets/images/datatables/resources/details_open.png",
+          "hash": "5885351831658646388"
+        },
+        {
+          "file": "src/assets/images/doc-images/modern-build-process.png",
+          "hash": "18099470490048676005"
+        },
+        {
+          "file": "src/assets/images/flags/ak.png",
+          "hash": "4861310285826849477"
+        },
+        {
+          "file": "src/assets/images/flags/al.png",
+          "hash": "9587101040828052622"
+        },
+        {
+          "file": "src/assets/images/flags/ar.png",
+          "hash": "8965412347755973612"
+        },
+        {
+          "file": "src/assets/images/flags/az.png",
+          "hash": "15520469522305731719"
+        },
+        {
+          "file": "src/assets/images/flags/ca.png",
+          "hash": "14792181232363888246"
+        },
+        {
+          "file": "src/assets/images/flags/co.png",
+          "hash": "16590868825912213909"
+        },
+        {
+          "file": "src/assets/images/flags/ct.png",
+          "hash": "10869253099544577256"
+        },
+        {
+          "file": "src/assets/images/flags/de.png",
+          "hash": "8776248955631982170"
+        },
+        {
+          "file": "src/assets/images/flags/fl.png",
+          "hash": "7505111621159717923"
+        },
+        {
+          "file": "src/assets/images/flags/ga.png",
+          "hash": "10627578223292095258"
+        },
+        {
+          "file": "src/assets/images/flags/hi.png",
+          "hash": "13626086637872061674"
+        },
+        {
+          "file": "src/assets/images/flags/ia.png",
+          "hash": "12420568745928771693"
+        },
+        {
+          "file": "src/assets/images/flags/id.png",
+          "hash": "6404710411921113811"
+        },
+        {
+          "file": "src/assets/images/flags/il.png",
+          "hash": "15280899481464738445"
+        },
+        {
+          "file": "src/assets/images/flags/in.png",
+          "hash": "6746328341794030739"
+        },
+        {
+          "file": "src/assets/images/flags/ks.png",
+          "hash": "3146402440876982438"
+        },
+        {
+          "file": "src/assets/images/flags/ky.png",
+          "hash": "7603212402077621466"
+        },
+        {
+          "file": "src/assets/images/flags/la.png",
+          "hash": "14489050935913942946"
+        },
+        {
+          "file": "src/assets/images/flags/ma.png",
+          "hash": "3305376002107237218"
+        },
+        {
+          "file": "src/assets/images/flags/md.png",
+          "hash": "17654233911064125720"
+        },
+        {
+          "file": "src/assets/images/flags/me.png",
+          "hash": "10590599467686479523"
+        },
+        {
+          "file": "src/assets/images/flags/mi.png",
+          "hash": "17363420523376871343"
+        },
+        {
+          "file": "src/assets/images/flags/mn.png",
+          "hash": "6860510747157218578"
+        },
+        {
+          "file": "src/assets/images/flags/mo.png",
+          "hash": "10660433180460807490"
+        },
+        {
+          "file": "src/assets/images/flags/ms.png",
+          "hash": "12949129205708849528"
+        },
+        {
+          "file": "src/assets/images/flags/mt.png",
+          "hash": "13591286903754131753"
+        },
+        {
+          "file": "src/assets/images/flags/nc.png",
+          "hash": "9055673801096815969"
+        },
+        {
+          "file": "src/assets/images/flags/nd.png",
+          "hash": "15968547629496589151"
+        },
+        {
+          "file": "src/assets/images/flags/ne.png",
+          "hash": "4296970914781191326"
+        },
+        {
+          "file": "src/assets/images/flags/nh.png",
+          "hash": "10266621478136441864"
+        },
+        {
+          "file": "src/assets/images/flags/nj.png",
+          "hash": "11987419021248368415"
+        },
+        {
+          "file": "src/assets/images/flags/nm.png",
+          "hash": "17345890618623039201"
+        },
+        {
+          "file": "src/assets/images/flags/nv.png",
+          "hash": "739188284347179025"
+        },
+        {
+          "file": "src/assets/images/flags/ny.png",
+          "hash": "10937298658088294532"
+        },
+        {
+          "file": "src/assets/images/flags/oh.png",
+          "hash": "13579324986460500644"
+        },
+        {
+          "file": "src/assets/images/flags/ok.png",
+          "hash": "1515734651826942878"
+        },
+        {
+          "file": "src/assets/images/flags/or.png",
+          "hash": "5024885079587233542"
+        },
+        {
+          "file": "src/assets/images/flags/pa.png",
+          "hash": "13799246281571929131"
+        },
+        {
+          "file": "src/assets/images/flags/ri.png",
+          "hash": "9019018629301380435"
+        },
+        {
+          "file": "src/assets/images/flags/sc.png",
+          "hash": "9405122880995641901"
+        },
+        {
+          "file": "src/assets/images/flags/sd.png",
+          "hash": "15652161803659097666"
+        },
+        {
+          "file": "src/assets/images/flags/tn.png",
+          "hash": "13210269669404990710"
+        },
+        {
+          "file": "src/assets/images/flags/tx.png",
+          "hash": "6471207876009585623"
+        },
+        {
+          "file": "src/assets/images/flags/ut.png",
+          "hash": "15461117976437191065"
+        },
+        {
+          "file": "src/assets/images/flags/va.png",
+          "hash": "7248031655520006312"
+        },
+        {
+          "file": "src/assets/images/flags/vt.png",
+          "hash": "12378067909931976012"
+        },
+        {
+          "file": "src/assets/images/flags/wa.png",
+          "hash": "2153444039689764051"
+        },
+        {
+          "file": "src/assets/images/flags/wi.png",
+          "hash": "8280980718317619855"
+        },
+        {
+          "file": "src/assets/images/flags/wv.png",
+          "hash": "17624405663272033746"
+        },
+        {
+          "file": "src/assets/images/flags/wy.png",
+          "hash": "1226737547998312506"
+        },
+        {
+          "file": "src/assets/images/ico/apple-icon-120.png",
+          "hash": "6615525244103805379"
+        },
+        {
+          "file": "src/assets/images/ico/apple-icon-152.png",
+          "hash": "2802793781106441256"
+        },
+        {
+          "file": "src/assets/images/ico/apple-icon-60.png",
+          "hash": "1952738617750560545"
+        },
+        {
+          "file": "src/assets/images/ico/apple-icon-76.png",
+          "hash": "394138097833454966"
+        },
+        {
+          "file": "src/assets/images/ico/favicon-32.png",
+          "hash": "7997143234171816188"
+        },
+        {
+          "file": "src/assets/images/ico/favicon.ico",
+          "hash": "9096788597643085110"
+        },
+        {
+          "file": "src/assets/images/icons/1-flight.png",
+          "hash": "17988916290825842608"
+        },
+        {
+          "file": "src/assets/images/icons/3-flight.png",
+          "hash": "4723902610791829657"
+        },
+        {
+          "file": "src/assets/images/icons/app-3.png",
+          "hash": "8265918868590434769"
+        },
+        {
+          "file": "src/assets/images/icons/app-4.png",
+          "hash": "14616140292565949185"
+        },
+        {
+          "file": "src/assets/images/icons/app-5.png",
+          "hash": "10266458611661228590"
+        },
+        {
+          "file": "src/assets/images/icons/app-6.png",
+          "hash": "15339064870000194499"
+        },
+        {
+          "file": "src/assets/images/icons/browser.png",
+          "hash": "803637398506214119"
+        },
+        {
+          "file": "src/assets/images/icons/btc.png",
+          "hash": "8701060055712527957"
+        },
+        {
+          "file": "src/assets/images/icons/firefox.png",
+          "hash": "9676226626582286913"
+        },
+        {
+          "file": "src/assets/images/icons/ie.png",
+          "hash": "9722902933574189858"
+        },
+        {
+          "file": "src/assets/images/icons/img.png",
+          "hash": "13077493224995767890"
+        },
+        {
+          "file": "src/assets/images/icons/loading.gif",
+          "hash": "2648389458098212373"
+        },
+        {
+          "file": "src/assets/images/icons/ltc.png",
+          "hash": "6302542454520150077"
+        },
+        {
+          "file": "src/assets/images/icons/nike.png",
+          "hash": "14119932581413329575"
+        },
+        {
+          "file": "src/assets/images/icons/opera.png",
+          "hash": "18245702314743146254"
+        },
+        {
+          "file": "src/assets/images/icons/play-pause.png",
+          "hash": "17078146515441838544"
+        },
+        {
+          "file": "src/assets/images/icons/play-pause.svg",
+          "hash": "3420994100273975188"
+        },
+        {
+          "file": "src/assets/images/icons/progressbar.gif",
+          "hash": "8186700147321854201"
+        },
+        {
+          "file": "src/assets/images/icons/repo-forked.png",
+          "hash": "9533944311765812010"
+        },
+        {
+          "file": "src/assets/images/icons/repo-source.png",
+          "hash": "6281683911722439162"
+        },
+        {
+          "file": "src/assets/images/icons/safari.png",
+          "hash": "6246642249427521693"
+        },
+        {
+          "file": "src/assets/images/icons/spinner.gif",
+          "hash": "16823934282450775367"
+        },
+        {
+          "file": "src/assets/images/icons/textarea-expand.png",
+          "hash": "7800373316298918989"
+        },
+        {
+          "file": "src/assets/images/icons/twitter-avatar1.png",
+          "hash": "3959078395619024794"
+        },
+        {
+          "file": "src/assets/images/icons/video-play.png",
+          "hash": "521882878340397123"
+        },
+        {
+          "file": "src/assets/images/icons/video-play.svg",
+          "hash": "4380119111471689302"
+        },
+        {
+          "file": "src/assets/images/icons/xrp.png",
+          "hash": "11235402354112260952"
+        },
+        {
+          "file": "src/assets/images/logo/logo-80x80.png",
+          "hash": "14543582296337920891"
+        },
+        {
+          "file": "src/assets/images/logo/logo-dark-lg.png",
+          "hash": "4015241837198086174"
+        },
+        {
+          "file": "src/assets/images/logo/logo-dark.png",
+          "hash": "2761322854753996543"
+        },
+        {
+          "file": "src/assets/images/logo/logo-light-is-logo.png",
+          "hash": "14543582296337920891"
+        },
+        {
+          "file": "src/assets/images/logo/logo-light-lg.png",
+          "hash": "8707702223545263929"
+        },
+        {
+          "file": "src/assets/images/logo/logo-light.png",
+          "hash": "14561746040669491372"
+        },
+        {
+          "file": "src/assets/images/logo/logo.png",
+          "hash": "14543582296337920891"
+        },
+        {
+          "file": "src/assets/images/logo/logoAtividade.png",
+          "hash": "5269711871042935442"
+        },
+        {
+          "file": "src/assets/images/logo/logoativ.png",
+          "hash": "7237946989946631110"
+        },
+        {
+          "file": "src/assets/images/logo/logoufrj.png",
+          "hash": "16694801504338759460"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-1.png",
+          "hash": "11021079342589286308"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-10.png",
+          "hash": "9675037700245812801"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-11.png",
+          "hash": "3032297373988118162"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-12.png",
+          "hash": "4489858288526472630"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-13.png",
+          "hash": "1433187674389276578"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-14.png",
+          "hash": "11108041675471450300"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-15.png",
+          "hash": "8972537343615750504"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-16.png",
+          "hash": "6943425369725271645"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-17.png",
+          "hash": "4935972312678901172"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-18.png",
+          "hash": "17285505914887363564"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-19.png",
+          "hash": "8006485949184048272"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-2.png",
+          "hash": "9855148017697945466"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-20.png",
+          "hash": "10565434719796172429"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-21.png",
+          "hash": "2987076937216356776"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-22.png",
+          "hash": "7926659257815705385"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-23.png",
+          "hash": "17772025006040740884"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-24.png",
+          "hash": "11696898531546904224"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-25.png",
+          "hash": "16787013312043950119"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-26.png",
+          "hash": "16787013312043950119"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-3.png",
+          "hash": "11800604206965934467"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-4.png",
+          "hash": "18092803247604121398"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-5.png",
+          "hash": "9470662676094974680"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-6.png",
+          "hash": "12838295833048804375"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-7.png",
+          "hash": "7184368722969033121"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-8.png",
+          "hash": "7197282965052298183"
+        },
+        {
+          "file": "src/assets/images/portrait/small/avatar-s-9.png",
+          "hash": "17804493298497249402"
+        },
+        {
+          "file": "src/assets/images/portrait/small/default.png",
+          "hash": "14596539313375133432"
+        },
+        {
+          "file": "src/assets/images/slider/top.png",
+          "hash": "15566284282750960169"
+        },
+        {
+          "file": "src/assets/images/svg/cd-arrow.svg",
+          "hash": "5978465830876275749"
+        },
+        {
+          "file": "src/assets/images/svg/magnifier.svg",
+          "hash": "18247682504833916436"
+        },
+        {
+          "file": "src/assets/sass/main.scss",
+          "hash": "4869932859852441561"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_alert.scss",
+          "hash": "18155968493572082071"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_badge.scss",
+          "hash": "14084347634263013026"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_breadcrumb.scss",
+          "hash": "13243867446057691965"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_button-group.scss",
+          "hash": "13272291046632560575"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_buttons.scss",
+          "hash": "4753709729815645427"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_card.scss",
+          "hash": "14420321125963309944"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_carousel.scss",
+          "hash": "340814256778669113"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_close.scss",
+          "hash": "4693326532994911350"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_code.scss",
+          "hash": "11075358769546171365"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_custom-forms.scss",
+          "hash": "9335680539243079094"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_dropdown.scss",
+          "hash": "13203260880207982934"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_forms.scss",
+          "hash": "13816059010281210211"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_functions.scss",
+          "hash": "4369511010934322616"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_grid.scss",
+          "hash": "6846383896826123927"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_images.scss",
+          "hash": "18397457004265647193"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_input-group.scss",
+          "hash": "12032345161131309895"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_jumbotron.scss",
+          "hash": "8270558144602494465"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_list-group.scss",
+          "hash": "14461107331468745290"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_media.scss",
+          "hash": "13914439262375542006"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_mixins.scss",
+          "hash": "5030467784664778912"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_modal.scss",
+          "hash": "125255921050948186"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_nav.scss",
+          "hash": "16663102351723098015"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_navbar.scss",
+          "hash": "12832444281759901463"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_pagination.scss",
+          "hash": "12728747424915069311"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_popover.scss",
+          "hash": "13156317186046480735"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_print.scss",
+          "hash": "478354604439552825"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_progress.scss",
+          "hash": "10171948262985710669"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_reboot.scss",
+          "hash": "14903157955860574617"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_root.scss",
+          "hash": "9518950632032041821"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_spinners.scss",
+          "hash": "7436932263579191039"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_tables.scss",
+          "hash": "12052800550635576751"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_toasts.scss",
+          "hash": "2371120666202794228"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_tooltip.scss",
+          "hash": "5510521882529526746"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_transitions.scss",
+          "hash": "6550989337111953348"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_type.scss",
+          "hash": "3731006557728404755"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_utilities.scss",
+          "hash": "7785563820627412062"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/_variables.scss",
+          "hash": "16578971594939817258"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/bootstrap-grid.scss",
+          "hash": "13336648932204142771"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/bootstrap-reboot.scss",
+          "hash": "2307244867236562174"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/bootstrap.scss",
+          "hash": "14959780240807260804"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_alert.scss",
+          "hash": "18317094795456064632"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_background-variant.scss",
+          "hash": "15058749584023818303"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_badge.scss",
+          "hash": "3178202377682377084"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_border-radius.scss",
+          "hash": "935485385366051947"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_box-shadow.scss",
+          "hash": "2804991493547851588"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_breakpoints.scss",
+          "hash": "2790290584440955282"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_buttons.scss",
+          "hash": "7726512664347468232"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_caret.scss",
+          "hash": "10904387663865853242"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_clearfix.scss",
+          "hash": "12215856963555418800"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_deprecate.scss",
+          "hash": "10442239996148684957"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_float.scss",
+          "hash": "9318253355145879242"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_forms.scss",
+          "hash": "11672037079375537590"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_gradients.scss",
+          "hash": "14420893278995017585"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_grid-framework.scss",
+          "hash": "12837398302500220390"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_grid.scss",
+          "hash": "254687591270742233"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_hover.scss",
+          "hash": "4274716433738951696"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_image.scss",
+          "hash": "3770223208614514689"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_list-group.scss",
+          "hash": "3048438594817259595"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_lists.scss",
+          "hash": "11700803411667393396"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_nav-divider.scss",
+          "hash": "17669203838846700004"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_pagination.scss",
+          "hash": "9554639219387364080"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_reset-text.scss",
+          "hash": "2154417453589001642"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_resize.scss",
+          "hash": "6807596546783936194"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_screen-reader.scss",
+          "hash": "12344559585915117301"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_size.scss",
+          "hash": "9476103514184782386"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_table-row.scss",
+          "hash": "14746221975493839209"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_text-emphasis.scss",
+          "hash": "13119299348951308631"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_text-hide.scss",
+          "hash": "583583528983324102"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_text-truncate.scss",
+          "hash": "7439820773847068447"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_transition.scss",
+          "hash": "15287188237434716545"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/mixins/_visibility.scss",
+          "hash": "12798457592799695979"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_align.scss",
+          "hash": "12044560572107288363"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_background.scss",
+          "hash": "357059499602183174"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_borders.scss",
+          "hash": "7167516068365013222"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_clearfix.scss",
+          "hash": "10003851454122752987"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_display.scss",
+          "hash": "16373090363208869982"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_embed.scss",
+          "hash": "7551053252812344390"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_flex.scss",
+          "hash": "1527800055491994785"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_float.scss",
+          "hash": "2511833268820100218"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_overflow.scss",
+          "hash": "6238369912900325424"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_position.scss",
+          "hash": "4001380985654198175"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_screenreaders.scss",
+          "hash": "17339700480401137889"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_shadows.scss",
+          "hash": "3287742348328383124"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_sizing.scss",
+          "hash": "10344840713519954622"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_spacing.scss",
+          "hash": "17488555862105695188"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_stretched-link.scss",
+          "hash": "9089229498965237547"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_text.scss",
+          "hash": "14072003332928656112"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/utilities/_visibility.scss",
+          "hash": "9016461647074484210"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap/vendor/_rfs.scss",
+          "hash": "4042160377955114149"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/.sass-cache/b161be96449978188ab92f1e37bbeda94f2952ce/buttons.scssc",
+          "hash": "2873165430237640064"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_alert.scss",
+          "hash": "4044658933004365244"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_animation.scss",
+          "hash": "6761365004412573611"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_badge.scss",
+          "hash": "7510001754685418162"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_breadcrumb.scss",
+          "hash": "7661128885023106426"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_buttons.scss",
+          "hash": "9831865174832845337"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_card.scss",
+          "hash": "10770226667363335476"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_code.scss",
+          "hash": "7686473333667506093"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_dropdown.scss",
+          "hash": "5209471701052907667"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_forms.scss",
+          "hash": "13214102872147272698"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_grid.scss",
+          "hash": "13773282732419092675"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_list-group.scss",
+          "hash": "6460636386433964030"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_media.scss",
+          "hash": "6979020622301828150"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_mixins.scss",
+          "hash": "4033867629273002156"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_modal.scss",
+          "hash": "8151242461944722623"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_nav.scss",
+          "hash": "13237453789576398222"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_navbar.scss",
+          "hash": "10134196875329318899"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_pagination.scss",
+          "hash": "6024731985024330239"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_popover.scss",
+          "hash": "296163416327524665"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_progress.scss",
+          "hash": "14286025351036367528"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_reboot.scss",
+          "hash": "16064140863484180900"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_tables.scss",
+          "hash": "4183887675122715636"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_toast.scss",
+          "hash": "2277202211853178785"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_type.scss",
+          "hash": "5681020544452700274"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/_utilities.scss",
+          "hash": "15181951079529121577"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/mixins/_buttons.scss",
+          "hash": "7535131440143722907"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/mixins/_forms.scss",
+          "hash": "12842700911491411828"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/mixins/_label.scss",
+          "hash": "1975841824336648036"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/mixins/_navbar-align.scss",
+          "hash": "989760624553861106"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/mixins/_navs.scss",
+          "hash": "14541695952426681042"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended/mixins/_type.scss",
+          "hash": "5568821835768515788"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap-extended.scss",
+          "hash": "17085965866973139843"
+        },
+        {
+          "file": "src/assets/sass/scss/bootstrap.scss",
+          "hash": "6771053284819574226"
+        },
+        {
+          "file": "src/assets/sass/scss/colors.scss",
+          "hash": "7418645497234952089"
+        },
+        {
+          "file": "src/assets/sass/scss/commansocial.scss",
+          "hash": "8045063552418241414"
+        },
+        {
+          "file": "src/assets/sass/scss/components/avatar.scss",
+          "hash": "9654620691097404233"
+        },
+        {
+          "file": "src/assets/sass/scss/components/bootstrap-social.scss",
+          "hash": "5668765028406690670"
+        },
+        {
+          "file": "src/assets/sass/scss/components/callout.scss",
+          "hash": "1103973789308945003"
+        },
+        {
+          "file": "src/assets/sass/scss/components/chart.scss",
+          "hash": "2442211274021262713"
+        },
+        {
+          "file": "src/assets/sass/scss/components/content-header-image.scss",
+          "hash": "4654122335694618498"
+        },
+        {
+          "file": "src/assets/sass/scss/components/customizer.scss",
+          "hash": "15928289478503857585"
+        },
+        {
+          "file": "src/assets/sass/scss/components/demo.scss",
+          "hash": "18444674646570207285"
+        },
+        {
+          "file": "src/assets/sass/scss/components/footer.scss",
+          "hash": "9760860708623246180"
+        },
+        {
+          "file": "src/assets/sass/scss/components/fullscreen-search.scss",
+          "hash": "13689528179121587921"
+        },
+        {
+          "file": "src/assets/sass/scss/components/helper.scss",
+          "hash": "12869486346753804548"
+        },
+        {
+          "file": "src/assets/sass/scss/components/search.scss",
+          "hash": "5373461224914626779"
+        },
+        {
+          "file": "src/assets/sass/scss/components.scss",
+          "hash": "13642449004293107093"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/_material-palette.scss",
+          "hash": "13509805584295863958"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/_palette.scss",
+          "hash": "10437397945631641645"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/material-palette-gradient.scss",
+          "hash": "8375861604561410972"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/material-palette-variables.scss",
+          "hash": "9629823413996881706"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-callout.scss",
+          "hash": "9012792934759284717"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-climacon.scss",
+          "hash": "52542393068380467"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-gradient.scss",
+          "hash": "4677148876448586539"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-loader.scss",
+          "hash": "2548725760438592225"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-noui.scss",
+          "hash": "2952015250339812412"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-switch.scss",
+          "hash": "7616695511821727922"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-tooltip.scss",
+          "hash": "5968265279133506174"
+        },
+        {
+          "file": "src/assets/sass/scss/core/colors/palette-variables.scss",
+          "hash": "15128172159258397279"
+        },
+        {
+          "file": "src/assets/sass/scss/core/layouts/_content.scss",
+          "hash": "16557173280819500179"
+        },
+        {
+          "file": "src/assets/sass/scss/core/layouts/_footer.scss",
+          "hash": "18052364966466389628"
+        },
+        {
+          "file": "src/assets/sass/scss/core/layouts/_horizontal.scss",
+          "hash": "7329693980663181536"
+        },
+        {
+          "file": "src/assets/sass/scss/core/layouts/_main-menu.scss",
+          "hash": "9828218903623584254"
+        },
+        {
+          "file": "src/assets/sass/scss/core/layouts/_sidebar.scss",
+          "hash": "14513461774457650096"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/_navigation.scss",
+          "hash": "14491001698253276478"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/menu-types/horizontal-menu.scss",
+          "hash": "17038541214388468233"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/menu-types/vertical-compact-menu.scss",
+          "hash": "15004209165533183336"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/menu-types/vertical-content-menu.scss",
+          "hash": "12864476875054026333"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/menu-types/vertical-menu-modern.scss",
+          "hash": "13576039451267097263"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/menu-types/vertical-menu.scss",
+          "hash": "8210186444639984615"
+        },
+        {
+          "file": "src/assets/sass/scss/core/menu/menu-types/vertical-overlay-menu.scss",
+          "hash": "11282191801984775444"
+        },
+        {
+          "file": "src/assets/sass/scss/core/mixins/callout.scss",
+          "hash": "5658364928976205931"
+        },
+        {
+          "file": "src/assets/sass/scss/core/mixins/hex2rgb.scss",
+          "hash": "4363122587737350940"
+        },
+        {
+          "file": "src/assets/sass/scss/core/mixins/main-menu-mixin.scss",
+          "hash": "8982460505485922689"
+        },
+        {
+          "file": "src/assets/sass/scss/core/mixins/transitions.scss",
+          "hash": "456124516051674978"
+        },
+        {
+          "file": "src/assets/sass/scss/core/variables/_bootstrap-variables.scss",
+          "hash": "4299212441832645766"
+        },
+        {
+          "file": "src/assets/sass/scss/core/variables/_components-variables.scss",
+          "hash": "7769566848894916140"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/animate/animate.scss",
+          "hash": "2144958503194143162"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/calendars/clndr.scss",
+          "hash": "13029330975857476883"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/calendars/fullcalendar.scss",
+          "hash": "913500226989076510"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/charts/c3-chart.scss",
+          "hash": "16919505783679791629"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/editors/_editors.scss",
+          "hash": "372046851113565481"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/extensions/noui-slider.scss",
+          "hash": "16821485596834160336"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/extensions/toastr.scss",
+          "hash": "12937440188584045072"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/file-uploaders/dropzone.scss",
+          "hash": "4433337879663427112"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/checkboxes-radios.scss",
+          "hash": "13116790188602875959"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/dual-listbox.scss",
+          "hash": "1480651425626962874"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/extended/form-extended.scss",
+          "hash": "12106522478883082483"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/extended/typeahed.scss",
+          "hash": "7757940740547672374"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/select2/_select2.scss",
+          "hash": "4561595367138588794"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/selectBoxIt/selectBoxIt.scss",
+          "hash": "8728128892576977003"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/selectivity/selectivity.scss",
+          "hash": "9125981599494479081"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/selectize/selectize.scss",
+          "hash": "7537134444322906977"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/switch.scss",
+          "hash": "17583205445463466854"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/tags/_basic-input.scss",
+          "hash": "929089798738339466"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/validation/form-validation.scss",
+          "hash": "4978231236433652053"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/forms/wizard.scss",
+          "hash": "12822372075480946261"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/images/cropper/_custom.scss",
+          "hash": "7914044583001650171"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/images/cropper/_main.scss",
+          "hash": "7181515368846167291"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/images/cropper/_mixins.scss",
+          "hash": "14405953895260391250"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/images/cropper/_utilities.scss",
+          "hash": "8457590064465807424"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/images/cropper/_variables.scss",
+          "hash": "16029423450781455632"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/images/cropper/cropper.scss",
+          "hash": "18249035581829168568"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/_custom.scss",
+          "hash": "6658268573065377345"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/_functions.scss",
+          "hash": "13467795418224126671"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/_mixins.scss",
+          "hash": "6124215187656053884"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/_variables.scss",
+          "hash": "15430039195360873772"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-beat.scss",
+          "hash": "8056677033811660959"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-clip-rotate-multiple.scss",
+          "hash": "10157336911232783931"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-clip-rotate-pulse.scss",
+          "hash": "4888905192279537907"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-clip-rotate.scss",
+          "hash": "13163012988398657208"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-grid-beat.scss",
+          "hash": "5391354689745256667"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-grid-pulse.scss",
+          "hash": "14947515765237564476"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-pulse-rise.scss",
+          "hash": "16816733714262725955"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-pulse-round.scss",
+          "hash": "9308137529037290553"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-pulse-sync.scss",
+          "hash": "11286395157946584189"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-pulse.scss",
+          "hash": "14330066301622470184"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-rotate.scss",
+          "hash": "9216627818414291378"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-scale-multiple.scss",
+          "hash": "9568371800303286545"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-scale-random.scss",
+          "hash": "12727797507229553783"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-scale-ripple-multiple.scss",
+          "hash": "10231806171456544187"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-scale-ripple.scss",
+          "hash": "11878719862597513273"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-scale.scss",
+          "hash": "16259154068981419819"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-spin-fade-loader.scss",
+          "hash": "17479614588148936280"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-spin-loader.scss",
+          "hash": "13224786008459143312"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-triangle-trace.scss",
+          "hash": "10104647945268250899"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-zig-zag-deflect.scss",
+          "hash": "5734699486076088614"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/ball-zig-zag.scss",
+          "hash": "17732155618372343415"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/cube-transition.scss",
+          "hash": "11011318721997701565"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/line-scale-pulse-out-rapid.scss",
+          "hash": "17017236033826328482"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/line-scale-pulse-out.scss",
+          "hash": "4001102653126970936"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/line-scale-random.scss",
+          "hash": "14561218645248357378"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/line-scale.scss",
+          "hash": "8772176169676007699"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/line-spin-fade-loader.scss",
+          "hash": "9068324546912958971"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/pacman.scss",
+          "hash": "5361134691153875082"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/semi-circle-spin.scss",
+          "hash": "7555235504702492092"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/square-spin.scss",
+          "hash": "2360613880881197406"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/animations/triangle-skew-spin.scss",
+          "hash": "15197200997353176576"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/loaders/loaders.scss",
+          "hash": "17101779378405857315"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/menu/perfect-scrollbar/_main.scss",
+          "hash": "2157598662087828892"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/menu/perfect-scrollbar/_mixins.scss",
+          "hash": "6822251726927170132"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/menu/perfect-scrollbar/_ps-custom.scss",
+          "hash": "4174127555101588352"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/menu/perfect-scrollbar/_themes.scss",
+          "hash": "12719212578826034464"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/menu/perfect-scrollbar/_variables.scss",
+          "hash": "9602677209748025562"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/pagination/_pagination.scss",
+          "hash": "10965591857403952851"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/pickers/colorpicker/colorpicker.scss",
+          "hash": "3285764162293881823"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/pickers/daterange/daterange.scss",
+          "hash": "4222123734310084749"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/tables/_datatables.scss",
+          "hash": "18335394427997857751"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/tables/handsontable.scss",
+          "hash": "8675020968190239561"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/timeline/_timeline-horizontal.scss",
+          "hash": "8093049026433875908"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/ui/_breakpoints.scss",
+          "hash": "6063229188571562496"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/ui/coming-soon.scss",
+          "hash": "6063229188571562496"
+        },
+        {
+          "file": "src/assets/sass/scss/plugins/ui/shapes.scss",
+          "hash": "7122660257572394946"
+        },
+        {
+          "file": "src/browserslist",
+          "hash": "10537747807074858802"
+        },
+        {
+          "file": "src/environments/environment.prod.ts",
+          "hash": "11892263437547248796"
+        },
+        {
+          "file": "src/environments/environment.ts",
+          "hash": "1447380598608156909"
+        },
+        {
+          "file": "src/favicon.ico",
+          "hash": "14356862334585494759"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "3882696550742760194"
+        },
+        {
+          "file": "src/karma.conf.js",
+          "hash": "4129411247974546050",
+          "deps": [
+            [
+              "npm:karma-jasmine",
+              "dynamic"
+            ],
+            [
+              "npm:karma-chrome-launcher",
+              "dynamic"
+            ],
+            [
+              "npm:karma-jasmine-html-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:karma-coverage-istanbul-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:@angular-devkit/build-angular",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "14418682105238715715",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "src/polyfills.ts",
+          "hash": "13361962578869661678",
+          "deps": [
+            "npm:@angular/localize",
+            "npm:core-js",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "2224011625015299785"
+        },
+        {
+          "file": "src/test.ts",
+          "hash": "14294793772964194938",
+          "deps": [
+            "npm:zone.js",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "src/tsconfig.app.json",
+          "hash": "5732218985497035396"
+        },
+        {
+          "file": "src/tsconfig.spec.json",
+          "hash": "8703170487874242571"
+        },
+        {
+          "file": "src/tslint.json",
+          "hash": "604974680624173022"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "10569034290652602442"
+        },
+        {
+          "file": "tslint.json",
+          "hash": "13447457261485487733"
+        },
+        {
+          "file": "typings/globals/node/index.d.ts",
+          "hash": "2301920999545901102",
+          "deps": [
+            "npm:events",
+            "npm:net",
+            "npm:stream",
+            "npm:child_process",
+            "npm:tls",
+            "npm:http",
+            "npm:readline",
+            "npm:crypto"
+          ]
+        },
+        {
+          "file": "typings/globals/node/typings.json",
+          "hash": "4626056426647129788"
+        },
+        {
+          "file": "typings/index.d.ts",
+          "hash": "15205669757657039228"
+        },
+        {
+          "file": "typings.json",
+          "hash": "9713129142970511096"
+        }
+      ],
+      "modern-admin-e2e": [
+        {
+          "file": "e2e/project.json",
+          "hash": "15623291663600312162"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # marUfrj
 projeto para a Mari trabalho de escola
-=======
 # modern-admin-html-2.0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1
@@ -83,4 +81,3 @@ Remove all occurences of below text from index.html generated in dist folder
 media="print" onload="this.media='all'"
 
 
->>>>>>> 0765460 (feat: desenvolvimento inicial)
