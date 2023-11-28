@@ -12,40 +12,20 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-6 col-md-12">
+          <div *ngFor="let event of events" class="col-xl-6 col-md-12">
             <div class="card overflow-hidden">
               <div class="card-content">
                 <div class="card-body cleartfix">
                   <div class="media align-items-stretch">
                     <div class="align-self-center">
-                      <i class="icon-pin info font-large-2 mr-2"></i>
+                      <i class="{{event.icon}} info font-large-2 mr-2"></i>
                     </div>
                     <div class="media-body">
-                      <h4>Curso de Corte e Costura</h4>
-                      <span>Duas vezes por semana - Presencial </span>
+                      <h4>{{event.title}}</h4>
+                      <span>{{event.descricao}} </span>
                     </div>
-                    <div class="align-self-center">
-                      <h1>20 inscritos</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-md-12">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-body cleartfix">
-                  <div class="media align-items-stretch">
-                    <div class="align-self-center">
-                      <i class="icon-target warning font-large-2 mr-2"></i>
-                    </div>
-                    <div class="media-body">
-                      <h4>Treinamento em Mecânica</h4>
-                      <span>4 vezes por semana - Presencial </span>
-                    </div>
-                    <div class="align-self-center">
-                      <h1>30 inscritos</h1>
+                    <div class="align-self-center" >
+                      <button type="button" class="btn btn-outline-info _light" (click)="inscrever($event.target.value)"> <h4 >Inscreva-se</h4> </button>  
                     </div>
                   </div>
                 </div>
@@ -53,52 +33,6 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-xl-6 col-md-12">
-            <div class="card overflow-hidden">
-              <div class="card-content">
-                <div class="card-body cleartfix">
-                  <div class="media align-items-stretch">
-                    <div class="align-self-center">
-                      <i class="icon-camcorder info font-large-2 mr-2"></i>
-                    </div>
-                    <div class="media-body">
-                      <h4>Curso de Filmagem</h4>
-                      <span>Tres vezes por semana - Presencial </span>
-                    </div>
-                    <div class="align-self-center">
-                      <h1>20 inscritos</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-md-12">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-body cleartfix">
-                  <div class="media align-items-stretch">
-                    <div class="align-self-center">
-                      <i class="icon-energy warning font-large-2 mr-2"></i>
-                    </div>
-                    <div class="media-body">
-                      <h4>Treinamento em Elétrica</h4>
-                      <span>4 vezes por semana - Presencial </span>
-                    </div>
-                    <div class="align-self-center">
-                      <h1>30 inscritos</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
       </section>
     </div>
   </div>

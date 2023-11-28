@@ -35,6 +35,10 @@ const appRoutes: Routes = [
         path: 'admin', loadChildren: () => import('../app/content/admin/form-elements.module').then(m => m.FormElementsModule),
         canActivate: [AuthGuard]
       },
+      {
+        path: 'kanban', loadChildren: () => import('../app/content/kanban/kanban.module').then(m => m.KanbanModule),
+        canActivate: [AuthGuard]
+      },
     ],
   },
   // otherwise redirect to home

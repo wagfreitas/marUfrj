@@ -6,6 +6,7 @@ import { startOfDay, endOfDay, subDays, addDays, endOfMonth, startOfMonth, isSam
 import { CalendarEventTimesChangedEvent, CalendarView, CalendarEvent, CalendarEventAction } from 'angular-calendar';
 import { NgbDateStruct, NgbTimeStruct } from '@ng-bootstrap/ng-bootstrap';
 import { BlockUI, NgBlockUI } from 'ng-block-ui';
+import { EventsService } from 'src/app/_services/events.service';
 
 const colors: any = {
   red: {
@@ -64,7 +65,7 @@ export class AddeventComponent implements OnInit {
   refresh: Subject<any> = new Subject();
 
   events: CalendarEvent[] = [
-    {
+   /* {
       start: subDays(startOfDay(new Date()), 0),
       end: addDays(new Date(), 1),
       title: 'Aula de Matemática',
@@ -103,7 +104,7 @@ export class AddeventComponent implements OnInit {
         afterEnd: true
       },
       draggable: true
-    }
+    }*/
   ];
 
 
@@ -119,7 +120,9 @@ export class AddeventComponent implements OnInit {
    *
    * @param NgbModal      modal
    */
-  constructor(private modal: NgbModal) { }
+  constructor(
+    private modal: NgbModal,
+    private eventService: EventsService) { }
 
   /**
    * onInit
@@ -132,11 +135,6 @@ export class AddeventComponent implements OnInit {
           'name': 'Home',
           'isLink': true,
           'link': '/dashboard/sales'
-        },
-        {
-          'name': 'Apps',
-          'isLink': true,
-          'link': '#'
         },
         {
           'name': 'Calendars',
@@ -183,8 +181,8 @@ export class AddeventComponent implements OnInit {
     newStart,
     newEnd
   }: CalendarEventTimesChangedEvent): void {
-    event.start = newStart;
-    event.end = newEnd;
+  //  event.start = newStart;
+   // event.end = newEnd;
     this.handleEvent('Dropped or resized', event);
     this.refresh.next({});
   }
@@ -203,7 +201,7 @@ export class AddeventComponent implements OnInit {
    * Add new event in modal
    */
   addEvent(): void {
-    this.newEvent = {
+   /* this.newEvent = {
       title: 'Curso de Alguma coisa ',
       start: startOfDay(new Date()),
       end: endOfDay(new Date()),
@@ -221,7 +219,7 @@ export class AddeventComponent implements OnInit {
 
     // this.refresh.next();
     this.handleEvent('Add new event', this.newEvent);
-    this.refresh.next({});
+    this.refresh.next({});*/
   }
 
   /**

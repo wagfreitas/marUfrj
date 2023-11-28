@@ -12,6 +12,7 @@ import { BlockUIModule } from 'ng-block-ui';
 
 import { BlockTemplateComponent } from 'src/app/_layout/blockui/block-template.component';
 import { MatchHeightModule } from '../partials/general/match-height/match-height.module';
+import { LineAwesomeComponent } from './line-awesome/line-awesome.component';
 
 @NgModule({
   imports: [
@@ -32,10 +33,14 @@ import { MatchHeightModule } from '../partials/general/match-height/match-height
         path: 'cadEventos',
         component: CadEventosComponent 
       },
+      {
+        path: 'icons',
+        component: LineAwesomeComponent 
+      },
      
     ])
   ],
-  declarations: [CadEventosComponent],
+  declarations: [CadEventosComponent, LineAwesomeComponent],
   exports: [RouterModule]
 })
 export class FormElementsModule { }

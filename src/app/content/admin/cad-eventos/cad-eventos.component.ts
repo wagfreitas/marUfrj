@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { CalendarEvent } from 'angular-calendar';
 import { NgBlockUI, BlockUI } from 'ng-block-ui';
+import Swal from 'sweetalert2'
+
+import { EventsService } from 'src/app/_services/events.service';
 
 @Component({
   selector: 'app-cad-eventos',
@@ -18,14 +22,9 @@ export class CadEventosComponent implements OnInit {
     reload: true
   };
 
-  projectInfo: FormGroup;
-  userProfile: FormGroup;
-  issueTracking: FormGroup;
-  timeSheet: FormGroup;
-  complaintForm: FormGroup;
-  donation: FormGroup;
-  eventRegistration1: FormGroup;
-  eventRegistration2: FormGroup;
+
+  cadEventos: FormGroup;
+ 
 
   public isFormActionInfo1 = false;
   public isFormActionInfo2 = false;
@@ -40,10 +39,12 @@ export class CadEventosComponent implements OnInit {
 
   interestedIn = ['design', 'development', 'illustration', 'branding', 'video'];
   budget = ['less than 5000$', '5000$ - 10000$', '10000$ - 20000$', 'more than 20000$'];
-  priority = ['Low', 'Medium', 'High'];
-  status = ['Not Started', 'Started', 'Fixed'];
+  priority = ['Interno', 'Externo'];
+  status = ['Interno', 'Externo'];
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private eventService: EventsService) { }
 
   ngOnInit() {
     this.breadcrumb = {
@@ -66,84 +67,53 @@ export class CadEventosComponent implements OnInit {
       ]
     };
 
-    this.projectInfo = this.formBuilder.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', Validators.required],
-      phone: ['', Validators.required],
-      company: ['', Validators.required],
-      interestedIn: ['', Validators.required],
-      budget: ['', Validators.required],
-      selectFile: ['', Validators.required],
-      aboutProject: ['', Validators.required],
-    });
 
-    this.userProfile = this.formBuilder.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      userName: ['', Validators.required],
-      nickName: ['', Validators.required],
-      email: ['', Validators.required],
-      website: ['', Validators.required],
-      phone: ['', Validators.required],
-      bio: ['', Validators.required]
-    });
-
-    this.issueTracking = this.formBuilder.group({
-      issueTitle: ['', Validators.required],
-      openedBy: ['', Validators.required],
-      dateOpened: ['', Validators.required],
-      dateFixed: ['', Validators.required],
-      priority: ['', Validators.required],
-      status: ['', Validators.required],
-      comment: ['', Validators.required]
-    });
-
-    this.timeSheet = this.formBuilder.group({
-      employeeName: ['', Validators.required],
-      projectname: ['', Validators.required],
-      date: ['', Validators.required],
-      ratePerHour: ['', Validators.required],
-      startTime: ['', Validators.required],
-      endTime: ['', Validators.required],
-      notes: ['', Validators.required]
-    });
-
-    this.complaintForm = this.formBuilder.group({
-      companyName: ['', Validators.required],
-      employeeName: ['', Validators.required],
-      complaintDate: ['', Validators.required],
-      supervisorName: ['', Validators.required],
-      complaintDetails: ['', Validators.required],
-      signature: ['', Validators.required]
-    });
-
-    this.donation = this.formBuilder.group({
-      fullName: ['', Validators.required],
-      email: ['', Validators.required],
-      contact: ['', Validators.required],
-      donationType: ['', Validators.required],
-      amount: ['', Validators.required],
-      comment: ['', Validators.required]
-    });
-
-    this.eventRegistration1 = this.formBuilder.group({
-      fullname: ['', Validators.required],
+    this.cadEventos = this.formBuilder.group({
       title: ['', Validators.required],
-      company: ['', Validators.required],
-      email: ['', Validators.required],
-      phone: ['', Validators.required],
-      customer1: ['', Validators.required]
+      professor: ['', Validators.required],
+      start: ['', Validators.required],
+      end: ['', Validators.required],
+      color: ['', Validators.required],
+      vacanciesNumber: ['', Validators.required],
+      descricao: ['', Validators.required],
+      targetPublic: ['', Validators.required],
+      icon: ['', Validators.required]
     });
 
-    this.eventRegistration2 = this.formBuilder.group({
-      fullname: ['', Validators.required],
-      title: ['', Validators.required],
-      company: ['', Validators.required],
-      email: ['', Validators.required],
-      phone: ['', Validators.required],
-      customer2: ['', Validators.required]
-    });
+  }
+
+  eventSave(){
+    this.cadEventos
+    const dataini = this.cadEventos.get('start').value
+    const datafim = this.cadEventos.get('end').value
+    const dataStart = `${dataini.year}/${dataini.month}/${dataini.day}`
+    const dataFinal= `${datafim.year}/${datafim.month}/${datafim.day}`
+
+    const dataEvent: CalendarEvent = {
+      title: this.cadEventos.get('title').value, 
+      professor: this.cadEventos.get('professor').value, 
+      start: new Date(dataStart), 
+      end: new Date(dataFinal),
+      targetAudience: this.cadEventos.get('targetPublic').value,
+      descricao: this.cadEventos.get('descricao').value,
+      vacanciesNumber: this.cadEventos.get('vacanciesNumber').value, 
+      color: this.cadEventos.get('color').value, 
+      icon: this.cadEventos.get('icon').value
+    }
+
+    this.eventService.create(dataEvent).then(() => {
+      Swal.fire({
+        title: 'Tudo Certo!',
+        text: 'Cadastro efetuado com sucesso',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
+      this.cadEventos.reset()
+    })
+
+
+   
+
 
   }
 

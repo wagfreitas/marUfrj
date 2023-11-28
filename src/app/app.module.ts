@@ -7,6 +7,7 @@ import { NgbModule, NgbCarouselConfig, NgbModalConfig } from '@ng-bootstrap/ng-b
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
@@ -90,6 +91,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule, // imports firebase/firestore, only needed for database features
         AngularFireAuthModule, // imports firebase/auth, only needed for auth features
+        AngularFireDatabaseModule,
          routing,
         // Settings modules
         SettingsModule.forRoot(ThemeSettingsConfig, MenuSettingsConfig),

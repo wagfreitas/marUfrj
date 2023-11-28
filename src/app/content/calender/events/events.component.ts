@@ -1,7 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ViewChild, TemplateRef } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, map } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import {
   startOfDay,
   endOfDay,
@@ -19,6 +21,7 @@ import {
   CalendarEventAction
 } from 'angular-calendar';
 import { BlockUI, NgBlockUI } from 'ng-block-ui';
+import { EventsService } from 'src/app/_services/events.service';
 const colors: any = {
   red: {
     primary: '#ad2121',
@@ -50,6 +53,7 @@ export class EventsComponent implements OnInit {
   @BlockUI('events') blockUIEvents: NgBlockUI;
 
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
+  @ViewChild('modalIcons', { static: true }) modalIcons: TemplateRef<any>;
 
   view: CalendarView = CalendarView.Month;
 
@@ -79,57 +83,7 @@ export class EventsComponent implements OnInit {
   ];
   refresh: Subject<any> = new Subject();
 
-  events: CalendarEvent[] = [
-    {
-      start: new Date(2023, 10, 21),
-      end: new Date(2023, 10, 21),
-      title: 'Aula de Matematica',
-      professor: 'Jose da Silva', 
-      descricao: 'Aula de reforço para alunos em recuperação',
-      color: colors.red,
-      actions: this.actions,
-      allDay: true,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true
-      },
-      draggable: true
-    },
-    {
-      start: new Date(2023, 10, 21),
-      end: new Date(2023, 10, 22),
-      title: 'Aula de Biologia',
-      professor: 'Jose da Silva', 
-      descricao: 'Aula de reforço para alunos em recuperação',
-      color: colors.yellow,
-      actions: this.actions
-    },
-    {
-      start: subDays(endOfMonth(new Date()), 3),
-      end: addDays(endOfMonth(new Date()), 3),
-      title: 'Curso de Corte e Costura',
-      professor: 'Maria de Lourdes Souza', 
-      descricao: 'Curso destinado a comunidade',
-      color: colors.blue,
-      allDay: true
-    },
-    {
-      start: addHours(startOfDay(new Date()), 2),
-      end: new Date(),
-      title: 'Curso de Mecânica',
-      professor: 'Alfredo Antonio', 
-      descricao: 'Aula de reforço para alunos em recuperação',
-      color: colors.yellow,
-      actions: this.actions,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true
-      },
-      draggable: true
-    }
-  ];
-
-
+ events: CalendarEvent[] = [];
 
 
   ngOnInit() {
@@ -149,8 +103,34 @@ export class EventsComponent implements OnInit {
         }
       ]
     };
+
+    this.eventService.getAll().snapshotChanges()
+    .pipe(
+      map(changes => 
+        changes.map(c => (
+          {id: c.payload.doc.id, 
+           ...c.payload.doc.data()
+          }
+        )
+        
+      )
+        
+      )
+    ).subscribe(data => {
+      data.forEach(res => {
+       const dtini = res.start['seconds'];
+       const dtfim = res.end['seconds'];
+
+       res.end   = new Date(dtfim * 1000); 
+       res.start = new Date(dtini * 1000)
+       
+      })
+      this.events = data
+    })
   }
-  constructor(private modal: NgbModal) {}
+  constructor(
+    private modal: NgbModal,
+    private eventService: EventsService) {}
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {
@@ -166,13 +146,14 @@ export class EventsComponent implements OnInit {
     }
   }
 
-  eventTimesChanged({
+  eventTimesChanged(
+    {
     event,
     newStart,
     newEnd
   }: CalendarEventTimesChangedEvent): void {
-    event.start = newStart;
-    event.end = newEnd;
+      event.start = newStart;
+      event.end = newEnd;
     this.handleEvent('Dropped or resized', event);
     this.refresh.next({});
   }
@@ -182,25 +163,12 @@ export class EventsComponent implements OnInit {
     this.modal.open(this.modalContent, { size: 'lg' });
   }
 
-  addEvent(): void {
-    this.events.push({
-      title: 'Curso de Elétrica',
-      start: startOfDay(new Date()),
-      end: endOfDay(new Date()),
-      color: colors.red,
-      professor: 'Francisca Carolina', 
-      descricao: 'Curso destinado a comunidade',
-      draggable: true,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true
-      }
-    });
-    this.refresh.next({});
-  }
+  
   deleteEvent(eventToDelete: CalendarEvent) {
     this.events = this.events.filter(event => event !== eventToDelete);
   }
+
+
   setView(view: CalendarView) {
     this.view = view;
   }

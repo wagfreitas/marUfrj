@@ -28,13 +28,14 @@ export const MenuSettingsConfig: MenuConfig = {
         page: '/changelog',
         badge: { type: 'badge-danger', value: '1.0' }
       },
-
-      { section: 'Área do Aluno', icon: 'la-ellipsis-h' },
       {
-        title: 'Minhas Atividades',
+        title: 'Atividades Disponíveis',
         icon: 'la-user',
         page: '/alunosAtividades',
       },
+
+      { section: 'Área do Aluno', icon: 'la-ellipsis-h' },
+     
       {
         title: 'Calenders',
         icon: 'la-calendar',
@@ -60,6 +61,12 @@ export const MenuSettingsConfig: MenuConfig = {
         page: '/',
       },
 
+      {
+        title: 'Kanban',
+        icon: 'la-book',
+        page: '/kanban',
+      },
+
       
       { section: 'Administrativo', icon: 'la-ellipsis-h' },
       {
@@ -74,6 +81,12 @@ export const MenuSettingsConfig: MenuConfig = {
               page: '/admin/cadEventos',
               icon: 'la-institution',
             },
+
+            {
+              title: 'Icones', 
+              page: '/admin/icons',
+              icon: 'la-pin'
+            }
 
             
           ]
